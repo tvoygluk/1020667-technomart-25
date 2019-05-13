@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Техномарт</title>
-</head>
-<body>
-  <header>
-    <div>
-      <img src="" alt="логотип Техномарт">
-      <div>
-        <img src="" alt="иконка поиска">
-        <!-- TODO: добавить форму (вместо неё span) -->
-        <span>форма поиска</span>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Техномарт</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top-area">
+        <a class="site-logo">Техномарт</a>
+        <div class="search-form">
+          <img class="search-icon" src="" alt="иконка поиска">
+          <!-- TODO: добавить форму (вместо неё span) -->
+          <span>форма поиска</span>
+        </div>
+        <ul class="user-iteraction-list">
+          <li class="user-iteraction-item">
+            <img class="bookmark-icon" src="" alt="иконка закладки">
+            <span class="bookmark-iteraction-text">Закладки: </span>
+            <span class="bookmark-iteraction-counter">0</span>
+          </li>
+          <li class="user-iteraction-item">
+            <img class="cart-icon" src="" alt="иконка корзины">
+            <span class="cart-iteraction-text">Корзина: </span>
+            <span class="cart-iteraction-counter">0</span>
+          </li>
+          <li class="user-iteraction-item">
+            <a class="checkout-iteraction-link" href="#">
+              <span class="checkout-iteraction-text">Оформить заказ</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li>
-          <img src="" alt="иконка закладки">
-          <span>Закладки: </span>
-          <span>0</span>
-        </li>
-        <li>
-          <img src="" alt="иконка корзины">
-          <span>Корзина: </span>
-          <span>0</span>
-        </li>
-        <li>
-          <a href="#">
-            <span>Оформить заказ</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
-</body>
+    </header>
+  </body>
 </html>
