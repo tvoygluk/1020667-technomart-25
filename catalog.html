@@ -19,11 +19,10 @@
             <span class="bookmark-iteraction-text">Закладки: </span>
             <span class="bookmark-iteraction-counter">0</span>
           </li>
-          <!-- TODO: -->
-          <li class="user-iteraction-item">
+          <li class="user-iteraction-item-with-added-content">
             <img class="cart-icon" src="" alt="иконка корзины">
             <span class="cart-iteraction-text">Корзина: </span>
-            <span class="cart-iteraction-counter">0</span>
+            <span class="cart-iteraction-counter">10</span>
           </li>
           <li class="user-iteraction-item">
             <a class="checkout-iteraction-link" href="#">
@@ -106,73 +105,114 @@
       </nav>
     </header>
     <main>
-
-      <ul>
+      <ul class="breadcrumbs-list">
         <!-- TODO: сделать между <li> декоративный элемент icon-right-small псевдоэлементом -->
-        <li><img src="" alt="иконка домика"></li>
-        <li>Каталог</li>
-        <li>Инструмент</li>
-        <li>Перфораторы</li>
+        <li class="breadcrumbs-item">
+          <a class="index-link" href="#">
+            <img class="home-icon" src="" alt="иконка домика">
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="catalog-link" href="#">
+            Каталог
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="tool-link" href="#">
+            Инструмент
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="perforator-link">
+            Перфораторы
+          </a>
+        </li>
       </ul>
-
-      <h2>Перфораторы</h2>
-
-      <section>
+      <h2 class="title-h2">Перфораторы</h2>
+      <section class="filters-item">
         <h3 class="hidden">Настройки отображения товаров</h3>
-        <p>
-          <h4>ПРОИЗВОДИТЕЛИ:</h4>
-          <ul>
-            <li><img src="" alt="иконка выбора чекбокс"> BOSCH</li>
-            <li><img src="" alt="иконка выбора чекбокс"> ИНТЕРСКОЛ</li>
-            <li><img src="" alt="иконка выбора чекбокс"> MAKIta</li>
-            <li><img src="" alt="иконка выбора чекбокс"> Dewalt</li>
-            <li><img src="" alt="иконка выбора чекбокс"> Hitachi</li>
+        <p class="manufacturers">
+          <h4 class="title-h4">ПРОИЗВОДИТЕЛИ:</h4>
+          <ul class="manufacturers-checkbox-list">
+            <li class="manufacturers-checkbox-item">
+              <img class="manufacturers-checkbox-icon-checked" src="" alt="иконка выбора чекбокс (нажатая)">
+              BOSCH
+            </li>
+            <li class="manufacturers-checkbox-item">
+              <img class="manufacturers-checkbox-icon" src="" alt="иконка выбора чекбокс">
+              ИНТЕРСКОЛ
+            </li>
+            <li class="manufacturers-checkbox-item">
+              <img class="manufacturers-checkbox-icon-checked" src="" alt="иконка выбора чекбокс (нажатая)">
+              MAKIta
+            </li>
+            <li class="manufacturers-checkbox-item">
+              <img class="manufacturers-checkbox-icon" src="" alt="иконка выбора чекбокс">
+              Dewalt
+            </li>
+            <li class="manufacturers-checkbox-item">
+              <img class="manufacturers-checkbox-icon" src="" alt="иконка выбора чекбокс">
+              Hitachi
+            </li>
           </ul>
         </p>
-        <p>
-          <h4>ПИТАНИЕ:</h4>
-          <ul>
-            <li><img src="" alt="иконка выбора радиобаттон"> Аккумуляторные</li>
-            <li><img src="" alt="иконка выбора радиобаттон"> Сетевые</li>
+        <p class="supply">
+          <h4 class="title-h4">ПИТАНИЕ:</h4>
+          <ul class="supply-radiobutton-list">
+            <li class="supply-item">
+              <img class="supply-radiobutton-icon-checked" src="" alt="иконка выбора радиобаттон (нажатая)">
+              Аккумуляторные
+            </li>
+            <li class="supply-item">
+              <img class="supply-radiobutton-icon" src="" alt="иконка выбора радиобаттон">
+              Сетевые
+            </li>
           </ul>
         </p>
-        <button>ПОКАЗАТЬ</button>
+        <button class="show-filtered-result">ПОКАЗАТЬ</button>
       </section>
-
-      <section>
+      <section class="content">
         <h3 class="hidden">Отсортированный товар «Перфораторы»</h3>
-        <ul>
-          <!-- TODO: 2 типа <li>: аналогично сделать остальные 7 после утверждения разметки -->
-          <li>
-            <img src="" alt="Перфоратор BOSCH  BFG 3000">
-            <h4>
-              <a href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 3000</span>
+        <ul class="content-list">
+          <li class="content-item">
+            <img class="content-img" src="" alt="фото «Перфоратор BOSCH  BFG 3000»">
+            <h4 class="content-title-h4">
+              <a class="content-link" href="#">
+                <span class="content-type">Перфоратор BOSCH</span>
+                <span class="content-name">BFG 3000</span>
               </a>
             </h4>
-            <p>
-              <span>22500 Р.</span>
-              <div>15500 Р.</div>
+            <p class="content-price">
+              <span class="previous-price">22500 Р.</span>
+              <div class="current-price">15500 Р.</div>
             </p>
           </li>
-
-          <li>
-            <img src="" alt="значёк нового товара">
-            <section>
-              <button ><img src="" alt="иконка корзины">КУПИТЬ</img></button>
-              <button>В закладки</button>
-            </section>
-            <h4>
-              <a href="#">
+          <li class="content-item">
+            <img class="new-content-icon" src="" alt="значок нового товара">
+            <ul class="user-interface-btn-list">
+              <li class="user-interface-btn-item">
+                <button class="btn-buy">
+                  <img class="cart-icon" src="" alt="иконка корзины">
+                  КУПИТЬ
+                </button>
+              </li>
+              <li class="user-interface-btn-item">
+                <button class="btn-add-bookmarks">
+                  В закладки
+                </button>
+              </li>
+            </ul>
+            <h4 class="content-title-h4">
+              <a class="content-link" href="#">
                 <span>Перфоратор BOSCH</span>
                 <span>BFG 2000</span>
               </a>
             </h4>
-            <p>
-              <div>12500 Р.</div>
+            <p class="content-price">
+              <div class="current-price">12500 Р.</div>
             </p>
           </li>
+          <!-- TODO: в макете 2 типа <li>: доделать остальные 7 после утверждения разметки -->
           <li></li>
           <li></li>
           <li></li>
@@ -182,7 +222,6 @@
           <li></li>
         </ul>
       </section>
-
     </main>
     <footer class="footer">
       <section class="footer-top">
