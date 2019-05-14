@@ -19,6 +19,7 @@
             <span class="bookmark-iteraction-text">Закладки: </span>
             <span class="bookmark-iteraction-counter">0</span>
           </li>
+          <!-- TODO: -->
           <li class="user-iteraction-item">
             <img class="cart-icon" src="" alt="иконка корзины">
             <span class="cart-iteraction-text">Корзина: </span>
@@ -40,65 +41,64 @@
           </div>
           <span class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </p>
-        <!-- TODO: добавить классы секции -->
-        <section>
-          <div>
-            <a href="#">
-              <img src="" alt="иконка пользователя">
-              <span>Равшан Джамшутович</span>
+        <section class="signed">
+          <div class="signed-user">
+            <a class="user-profile-link" href="#">
+              <img class="user-profile-icon" src="" alt="иконка пользователя">
+              <span class="user-profile-text">Равшан Джамшутович</span>
             </a>
-            <a href="#">
-              <img src="" alt="иконка выхода">
+            <a class="user-log-out" href="#">
+              <img class="user-log-out-icon" src="" alt="иконка выхода">
             </a>
           </div>
-          <ul>
-            <li>
-              <a href="#">Мои заказы</a>
+          <ul class="user-link-list">
+            <li class="user-link-item">
+              <a class="user-orders-link-text" href="#">Мои заказы</a>
             </li>
+            <!--TODO: сделать разделитель псевдоэлементом
             <li>
               <img src="" alt="декоративная точка-разделитель">
-            </li>
-            <li>
-              <a href="#">Личный кабинет</a>
+            </li> -->
+            <li class="user-link-item">
+              <a class="user-profile-link-text" href="#">Личный кабинет</a>
             </li>
           </ul>
         </section>
-
       </div>
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-item">
-            <a class="header-nav--link" href="#">
+            <a class="header-nav-link" href="#">
               Главная
             </a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav--link" href="#">
+            <a class="header-nav-link" href="#">
               Компания
             </a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav--link" href="#">
+            <a class="header-nav-link" href="#">
               Каталог
             </a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav--link" href="#">
+            <a class="header-nav-link" href="#">
               Новости
             </a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav--link" href="#">
+            <a class="header-nav-link" href="#">
               Спецпредложения
             </a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav--link" href="#">
+            <a class="header-nav-link" href="#">
               Доставка
             </a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav--link" href="#">
+            <a class="header-nav-link" href="#">
               Контакты
             </a>
           </li>
@@ -106,6 +106,82 @@
       </nav>
     </header>
     <main>
+
+      <ul>
+        <!-- TODO: сделать между <li> декоративный элемент icon-right-small псевдоэлементом -->
+        <li><img src="" alt="иконка домика"></li>
+        <li>Каталог</li>
+        <li>Инструмент</li>
+        <li>Перфораторы</li>
+      </ul>
+
+      <h2>Перфораторы</h2>
+
+      <section>
+        <h3 class="hidden">Настройки отображения товаров</h3>
+        <p>
+          <h4>ПРОИЗВОДИТЕЛИ:</h4>
+          <ul>
+            <li><img src="" alt="иконка выбора чекбокс"> BOSCH</li>
+            <li><img src="" alt="иконка выбора чекбокс"> ИНТЕРСКОЛ</li>
+            <li><img src="" alt="иконка выбора чекбокс"> MAKIta</li>
+            <li><img src="" alt="иконка выбора чекбокс"> Dewalt</li>
+            <li><img src="" alt="иконка выбора чекбокс"> Hitachi</li>
+          </ul>
+        </p>
+        <p>
+          <h4>ПИТАНИЕ:</h4>
+          <ul>
+            <li><img src="" alt="иконка выбора радиобаттон"> Аккумуляторные</li>
+            <li><img src="" alt="иконка выбора радиобаттон"> Сетевые</li>
+          </ul>
+        </p>
+        <button>ПОКАЗАТЬ</button>
+      </section>
+
+      <section>
+        <h3 class="hidden">Отсортированный товар «Перфораторы»</h3>
+        <ul>
+          <!-- TODO: 2 типа <li>: аналогично сделать остальные 7 после утверждения разметки -->
+          <li>
+            <img src="" alt="Перфоратор BOSCH  BFG 3000">
+            <h4>
+              <a href="#">
+                <span>Перфоратор BOSCH</span>
+                <span>BFG 3000</span>
+              </a>
+            </h4>
+            <p>
+              <span>22500 Р.</span>
+              <div>15500 Р.</div>
+            </p>
+          </li>
+
+          <li>
+            <img src="" alt="значёк нового товара">
+            <section>
+              <button ><img src="" alt="иконка корзины">КУПИТЬ</img></button>
+              <button>В закладки</button>
+            </section>
+            <h4>
+              <a href="#">
+                <span>Перфоратор BOSCH</span>
+                <span>BFG 2000</span>
+              </a>
+            </h4>
+            <p>
+              <div>12500 Р.</div>
+            </p>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
 
     </main>
     <footer class="footer">
@@ -194,7 +270,7 @@
               <a class="feedback-link" href="#">
                 mail@htmlacademy.ru
               </a>
-          </span>
+            </span>
           </li>
           <li class="developed">
             <span class="developed-text">
@@ -202,7 +278,7 @@
               <a class="developed-link" href="#">
                 htmlacademy.ru
               </a>
-          </span>
+            </span>
           </li>
         </ul>
       </section>
