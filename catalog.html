@@ -131,45 +131,65 @@
       <h2 class="title-h2">Перфораторы</h2>
       <section class="filters-item">
         <h3 class="visually-hidden">Настройки отображения товаров</h3>
-        <p class="manufacturers">
-          <h4 class="title-h4">ПРОИЗВОДИТЕЛИ:</h4>
-          <ul class="manufacturers-checkbox-list">
-            <li class="manufacturers-checkbox-item">
-              <img class="manufacturers-checkbox-icon-checked" src="" alt="иконка выбора чекбокс (нажатая)">
-              BOSCH
-            </li>
-            <li class="manufacturers-checkbox-item">
-              <img class="manufacturers-checkbox-icon" src="" alt="иконка выбора чекбокс">
-              ИНТЕРСКОЛ
-            </li>
-            <li class="manufacturers-checkbox-item">
-              <img class="manufacturers-checkbox-icon-checked" src="" alt="иконка выбора чекбокс (нажатая)">
-              MAKIta
-            </li>
-            <li class="manufacturers-checkbox-item">
-              <img class="manufacturers-checkbox-icon" src="" alt="иконка выбора чекбокс">
-              Dewalt
-            </li>
-            <li class="manufacturers-checkbox-item">
-              <img class="manufacturers-checkbox-icon" src="" alt="иконка выбора чекбокс">
-              Hitachi
-            </li>
-          </ul>
-        </p>
-        <p class="supply">
-          <h4 class="title-h4">ПИТАНИЕ:</h4>
-          <ul class="supply-radiobutton-list">
-            <li class="supply-item">
-              <img class="supply-radiobutton-icon-checked" src="" alt="иконка выбора радиобаттон (нажатая)">
-              Аккумуляторные
-            </li>
-            <li class="supply-item">
-              <img class="supply-radiobutton-icon" src="" alt="иконка выбора радиобаттон">
-              Сетевые
-            </li>
-          </ul>
-        </p>
-        <button class="show-filtered-result">ПОКАЗАТЬ</button>
+        <form class="filter-form" method="POST" action="https://echo.htmlacademy.ru">
+          <fieldset class="manufacturers">
+            <legend class="manufacturers-legend">
+              <h4 class="title-h4">ПРОИЗВОДИТЕЛИ:</h4>
+            </legend>
+            <ul class="manufacturers-checkbox-list">
+              <li class="manufacturers-checkbox-item">
+                <input class="manufacturers-input" type="checkbox" name="bosh" id="bosh-id" checked>
+                <label class="manufacturers-label" for="bosh-id">
+                  BOSCH
+                </label>
+              </li>
+              <li class="manufacturers-checkbox-item">
+                <input class="manufacturers-input" type="checkbox" name="enterscoll" id="enterscoll-id" >
+                <label class="manufacturers-label" for="enterscoll-id">
+                  ИНТЕРСКОЛ
+                </label>
+              </li>
+              <li class="manufacturers-checkbox-item">
+                <input class="manufacturers-input" type="checkbox" name="makita" id="makita-id" >
+                <label class="manufacturers-label" for="makita-id">
+                  MAKIta
+                </label>
+              </li>
+              <li class="manufacturers-checkbox-item">
+                <input class="manufacturers-input" type="checkbox" name="dewalt" id="dewalt-id" checked>
+                <label class="manufacturers-label" for="dewalt-id">
+                  Dewalt
+                </label>
+              </li>
+              <li class="manufacturers-checkbox-item">
+                <input class="manufacturers-input" type="checkbox" name="hitachi" id="hitachi-id" >
+                <label class="manufacturers-label" for="hitachi-id">
+                  Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="supply">
+            <legend class="supply-legend">
+              <h4 class="title-h4">ПИТАНИЕ:</h4>
+            </legend>
+            <ul class="supply-radiobutton-list">
+              <li class="supply-item">
+                <input class="supply-input" type="radio" name="supply-radio" id="battery-id" value="battery" >
+                <label class="supply-label" for="battery-id">
+                  Аккумуляторные
+                </label>
+              </li>
+              <li class="supply-item">
+                <input class="supply-input" type="radio" name="supply-radio" id="network-id" value="network" checked>
+                <label class="supply-label" for="network-id">
+                  Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="show-filtered-result" type="submit">ПОКАЗАТЬ</button>
+        </form>
       </section>
       <section class="content">
         <h3 class="visually-hidden">Отсортированный товар «Перфораторы»</h3>
