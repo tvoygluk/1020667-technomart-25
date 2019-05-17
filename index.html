@@ -133,7 +133,7 @@
         <span class="main-contacts-text">
           Вы можете забрать товар сами, заехав в наш офис:
         </span>
-        <img class="mini-map-pic" src="img/map.jpg" width="300" height="158" alt="карта">
+        <img class="mini-map-pic" src="img/map.jpg" width="300" height="158" alt="компания располагается по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
         <button class="find-us-btn">
           Заблудились? НапиШИТЕ НАМ!
         </button>
@@ -240,5 +240,39 @@
         </ul>
       </section>
     </footer>
+    <section class="modal modal-find-us">
+      <h2 class="visually-hidden">Написать в компанию</h2>
+      <form class="find-us-form" action="https://echo.htmlacademy.ru" method="POST">
+        <ul class="find-us-list">
+          <li class="find-us-item">
+            <label class="find-us-label" for="name-find-us">
+              Ваше  имя:
+            </label>
+            <input class="find-us-name" type="text" id="name-find-us" name="find-us-name" placeholder="Имя Фамилия">
+          </li>
+          <li class="find-us-item">
+            <label class="find-us-label" for="male-find-us">
+              Ваш e-mail:
+            </label>
+            <input class="find-us-male" type="password" id="male-find-us" name="find-us-male" placeholder="Имя Фамилия">
+          </li>
+          <li class="find-us-item">
+            <label class="find-us-label" for="letter-find-us">
+              Текст письма:
+            </label>
+            <textarea class="find-us-letter" id="letter-find-us" name="find-us-letter" rows="4" placeholder="В свободной форме"></textarea>
+          </li>
+        </ul>
+        <button class="submit-find-us-form" type="submit">ОТПРАВИТЬ</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть(иконка-крестик)</button>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button class="modal-close" type="button">Закрыть(иконка-крестик)</button>
+      <img src="img/map-big.jpg" width="940" height="447"
+          alt="Офис компании по адресу Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8">
+    </section>
   </body>
 </html>
+
