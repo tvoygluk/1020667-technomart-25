@@ -8,13 +8,11 @@
     <header class="header">
       <div class="header-top-area">
         <a class="header-site-logo">
-          <img class="logo-svg" src="img/logo-technomart-header.svg" width="220px" height="47px" alt="лого Техномарт">
+          <img class="logo-svg" src="img/logo-technomart-header.svg"
+              width="220px" height="47px" alt="лого Техномарт">
         </a>
-        <div class="search-form">
-          <img class="search-icon" src="" alt="иконка поиска">
-          <!-- TODO: добавить форму -->
-          <span>форма поиска</span>
-        </div>
+        <img class="search-icon" src="" alt="иконка поиска">
+        <input class="search-input" type="text" placeholder="Поиск:">
         <ul class="user-iteraction-list">
           <li class="user-iteraction-item">
             <img class="bookmark-icon" src="" alt="иконка закладки">
@@ -44,11 +42,15 @@
         </p>
         <ul class="sign-in-up-list">
           <li class="sign-in-btn">
-            <img class="sign-in-icon" src="" alt="иконка входа">
-            <span class="sign-in-text">Войти</span>
+            <!-- Прогрессивная ссылка: даёт возможность пользователю совершить Вход на новой странице -->
+            <a class="sign-in-link" href="#">
+              <img class="sign-in-icon" src="" alt="иконка входа">
+              Войти
+            </a>
           </li>
           <li class="sign-up-btn">
-            <span class="sign-up-text">Регистрация</span>
+            <!-- Прогрессивная ссылка: даёт возможность пользователю совершить Регистрацию на новой странице -->
+            <a class="sign-up-link" href="#">Регистрация</a>
           </li>
         </ul>
       </div>
@@ -65,7 +67,7 @@
             </a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav-link" href="#">
+            <a class="header-nav-link" href="catalog.html">
               Каталог
             </a>
           </li>
@@ -133,7 +135,11 @@
         <span class="main-contacts-text">
           Вы можете забрать товар сами, заехав в наш офис:
         </span>
-        <img class="mini-map-pic" src="img/map.jpg" width="300" height="158" alt="компания располагается по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
+        <a class="map-google-link" href="https://goo.gl/maps/UcFqZztmy1Xpd7GE7"
+            aria-label="ссылка на google-карту с адресом: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <img class="mini-map-pic" src="img/map.jpg" width="300" height="158"
+              alt="компания располагается по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
+        </a>
         <button class="find-us-btn">
           Заблудились? НапиШИТЕ НАМ!
         </button>
@@ -142,7 +148,8 @@
     <footer class="footer">
       <section class="footer-top">
         <a class="footer-site-logo">
-          <img class="logo-svg" src="img/logo-technomart-footer.svg" width="220px" height="68px" alt="лого Техномарт">
+          <img class="logo-svg" src="img/logo-technomart-footer.svg"
+              width="220px" height="68px" alt="лого Техномарт">
         </a>
         <nav class="footer-nav-top">
           <ul class="footer-nav-top-list">
@@ -157,7 +164,7 @@
               </a>
             </li>
             <li class="footer-nav-top-item">
-              <a class="footer-nav-top-link" href="#">
+              <a class="footer-nav-top-link" href="catalog.html">
                 Каталог
               </a>
             </li>
@@ -202,20 +209,22 @@
         </nav>
       </section>
       <section class="footer-bottom">
-        <span class="copyright">© 2010–2019 Компания «Техномарт» <br>Все права защищены</span>
+        <span class="copyright">
+          © 2010–2019 Компания «Техномарт» <br>Все права защищены
+        </span>
         <ul class="social-web-list">
           <li class="social-web-item">
-            <a class="link-vk" href="#">
+            <a class="link-vk" href="#" aria-label="Вконтакте">
               <img class="vk-icon" src="" alt="иконка ВК">
             </a>
           </li>
           <li class="social-web-item">
-            <a class="link-fb" href="#">
+            <a class="link-fb" href="#" aria-label="Фейсбук">
               <img class="fb-icon" src="" alt="иконка ФБ">
             </a>
           </li>
           <li class="social-web-item">
-            <a class="link-instagram" href="#">
+            <a class="link-instagram" href="#" aria-label="Инстаграм">
               <img class="instagram-icon" src="" alt="иконка Инстаграм">
             </a>
           </li>
@@ -232,7 +241,7 @@
           <li class="developed">
             <span class="developed-text">
               Разработано —<br>
-              <a class="developed-link" href="#">
+              <a class="developed-link" href="https://htmlacademy.ru/intensive/htmlcss">
                 htmlacademy.ru
               </a>
           </span>
