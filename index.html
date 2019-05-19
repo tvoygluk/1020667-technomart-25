@@ -8,8 +8,7 @@
     <header class="header">
       <div class="header-top-area">
         <a class="header-site-logo">
-          <img class="logo-svg" src="img/logo-technomart-header.svg"
-              width="220px" height="47px" alt="лого Техномарт">
+          <img class="logo-svg" src="img/logo-technomart-header.svg" width="220" height="47" alt="лого Техномарт">
         </a>
         <img class="search-icon" src="" alt="иконка поиска">
         <input class="search-input" type="text" placeholder="Поиск:">
@@ -33,13 +32,13 @@
       </div>
       <div class="header-middle-area">
         <h1 class="main-title">Интернет-магазин  строительных материалов  и инструментов для ремонта</h1>
-        <p class="header-contacts">
+        <div class="header-contacts">
           <div class="header-phone">
             <img class="phone-icon" src="" alt="иконка телефона">
             <span class="header-phone-number">+7 (812) 555-05-55</span>
           </div>
           <span class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-        </p>
+        </div>
         <ul class="sign-in-up-list">
           <li class="sign-in-btn">
             <!-- Прогрессивная ссылка: даёт возможность пользователю совершить Вход на новой странице -->
@@ -135,21 +134,18 @@
         <span class="main-contacts-text">
           Вы можете забрать товар сами, заехав в наш офис:
         </span>
-        <a class="map-google-link" href="https://goo.gl/maps/UcFqZztmy1Xpd7GE7"
-            aria-label="ссылка на google-карту с адресом: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-          <img class="mini-map-pic" src="img/map.jpg" width="300" height="158"
-              alt="компания располагается по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
+        <a class="map-google-link" href="https://goo.gl/maps/UcFqZztmy1Xpd7GE7" aria-label="ссылка на google-карту с адресом: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <img class="mini-map-pic" src="img/map.jpg" width="300" height="158" alt="компания располагается по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
         </a>
-        <button class="find-us-btn">
+        <button class="find-us-btn" type="button">
           Заблудились? НапиШИТЕ НАМ!
         </button>
       </section>
     </main>
     <footer class="footer">
-      <section class="footer-top">
+      <div class="footer-top">
         <a class="footer-site-logo">
-          <img class="logo-svg" src="img/logo-technomart-footer.svg"
-              width="220px" height="68px" alt="лого Техномарт">
+          <img class="logo-svg" src="img/logo-technomart-footer.svg" width="220" height="68" alt="лого Техномарт">
         </a>
         <nav class="footer-nav-top">
           <ul class="footer-nav-top-list">
@@ -207,8 +203,8 @@
             </li>
           </ul>
         </nav>
-      </section>
-      <section class="footer-bottom">
+      </div>
+      <div class="footer-bottom">
         <span class="copyright">
           © 2010–2019 Компания «Техномарт» <br>Все права защищены
         </span>
@@ -247,7 +243,7 @@
           </span>
           </li>
         </ul>
-      </section>
+      </div>
     </footer>
     <section class="modal modal-find-us">
       <h2 class="visually-hidden">Написать в компанию</h2>
@@ -263,7 +259,7 @@
             <label class="find-us-label" for="male-find-us">
               Ваш e-mail:
             </label>
-            <input class="find-us-male" type="password" id="male-find-us" name="find-us-male" placeholder="Имя Фамилия">
+            <input class="find-us-male" type="password" id="male-find-us" name="find-us-male" placeholder="email@example.com">
           </li>
           <li class="find-us-item">
             <label class="find-us-label" for="letter-find-us">
@@ -272,15 +268,14 @@
             <textarea class="find-us-letter" id="letter-find-us" name="find-us-letter" rows="4" placeholder="В свободной форме"></textarea>
           </li>
         </ul>
-        <button class="submit-find-us-form" type="submit">ОТПРАВИТЬ</button>
+        <button class="submit-find-us-form">ОТПРАВИТЬ</button>
       </form>
       <button class="modal-close" type="button">Закрыть(иконка-крестик)</button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <button class="modal-close" type="button">Закрыть(иконка-крестик)</button>
-      <img src="img/map-big.jpg" width="940" height="447"
-          alt="Офис компании по адресу Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8">
+      <img src="img/map-big.jpg" width="940" height="447" alt="Офис компании по адресу Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8">
     </section>
   </body>
 </html>
