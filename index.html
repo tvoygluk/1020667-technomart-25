@@ -10,18 +10,26 @@
         <a class="header-site-logo">
           <img class="logo-svg" src="img/logo-technomart-header.svg" width="220" height="47" alt="лого Техномарт">
         </a>
-        <img class="search-icon" src="" alt="иконка поиска">
-        <input class="search-input" type="text" placeholder="Поиск:">
+        <form class="search-header-form" action="https://echo.htmlacademy.ru" method="POST">
+          <button class="search-button">
+            <img class="search-icon" src="" alt="иконка поиска">
+          </button>
+          <input class="search-input" type="text" id="search-id" name="search-name" placeholder="Поиск:">
+        </form>
         <ul class="user-iteraction-list">
           <li class="user-iteraction-item">
-            <img class="bookmark-icon" src="" alt="иконка закладки">
-            <span class="bookmark-iteraction-text">Закладки: </span>
-            <span class="bookmark-iteraction-counter">0</span>
+            <a class="bookmark-link" href="#">
+              <img class="bookmark-icon" src="" alt="иконка закладки">
+              <span class="bookmark-iteraction-text">Закладки: </span>
+              <span class="bookmark-iteraction-counter">0</span>
+            </a>
           </li>
           <li class="user-iteraction-item">
-            <img class="cart-icon" src="" alt="иконка корзины">
-            <span class="cart-iteraction-text">Корзина: </span>
-            <span class="cart-iteraction-counter">0</span>
+            <a class="cart-link" href="#">
+              <img class="cart-icon" src="" alt="иконка корзины">
+              <span class="cart-iteraction-text">Корзина: </span>
+              <span class="cart-iteraction-counter">0</span>
+            </a>
           </li>
           <li class="user-iteraction-item">
             <a class="checkout-iteraction-link" href="#">
@@ -248,26 +256,24 @@
     <section class="modal modal-find-us">
       <h2 class="visually-hidden">Написать в компанию</h2>
       <form class="find-us-form" action="https://echo.htmlacademy.ru" method="POST">
-        <ul class="find-us-list">
-          <li class="find-us-item">
-            <label class="find-us-label" for="name-find-us">
-              Ваше  имя:
-            </label>
-            <input class="find-us-name" type="text" id="name-find-us" name="find-us-name" placeholder="Имя Фамилия">
-          </li>
-          <li class="find-us-item">
-            <label class="find-us-label" for="male-find-us">
-              Ваш e-mail:
-            </label>
-            <input class="find-us-male" type="password" id="male-find-us" name="find-us-male" placeholder="email@example.com">
-          </li>
-          <li class="find-us-item">
-            <label class="find-us-label" for="letter-find-us">
-              Текст письма:
-            </label>
-            <textarea class="find-us-letter" id="letter-find-us" name="find-us-letter" rows="4" placeholder="В свободной форме"></textarea>
-          </li>
-        </ul>
+        <p class="find-us-item-name">
+          <label class="find-us-label" for="name-find-us">
+            Ваше  имя:
+          </label>
+          <input class="find-us-name" type="text" id="name-find-us" name="find-us-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="find-us-item-label">
+          <label class="find-us-label" for="male-find-us">
+            Ваш e-mail:
+          </label>
+          <input class="find-us-male" type="password" id="male-find-us" name="find-us-male" placeholder="email@example.com">
+        </p>
+        <p class="find-us-item-letter">
+          <label class="find-us-label" for="letter-find-us">
+            Текст письма:
+          </label>
+          <textarea class="find-us-letter" id="letter-find-us" name="find-us-letter" rows="4" placeholder="В свободной форме"></textarea>
+        </p>
         <button class="submit-find-us-form">ОТПРАВИТЬ</button>
       </form>
       <button class="modal-close" type="button">Закрыть(иконка-крестик)</button>

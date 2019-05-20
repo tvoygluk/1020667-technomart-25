@@ -10,18 +10,26 @@
         <a class="header-site-logo" href="index.html">
           <img class="logo-svg" src="img/logo-technomart-header.svg" width="220" height="47" alt="лого Техномарт">
         </a>
-        <img class="search-icon" src="" alt="иконка поиска">
-        <input class="search-input" type="text" placeholder="Поиск:">
+        <form class="search-header-form" action="https://echo.htmlacademy.ru" method="POST">
+          <button class="search-button">
+            <img class="search-icon" src="" alt="иконка поиска">
+          </button>
+          <input class="search-input" type="text" id="search-id" name="search-name" placeholder="Поиск:">
+        </form>
         <ul class="user-iteraction-list">
           <li class="user-iteraction-item">
-            <img class="bookmark-icon" src="" alt="иконка закладки">
-            <span class="bookmark-iteraction-text">Закладки: </span>
-            <span class="bookmark-iteraction-counter">0</span>
+            <a class="bookmark-link" href="#">
+              <img class="bookmark-icon" src="" alt="иконка закладки">
+              <span class="bookmark-iteraction-text">Закладки: </span>
+              <span class="bookmark-iteraction-counter">0</span>
+            </a>
           </li>
           <li class="user-iteraction-item-with-added-content">
-            <img class="cart-icon" src="" alt="иконка корзины">
-            <span class="cart-iteraction-text">Корзина: </span>
-            <span class="cart-iteraction-counter">10</span>
+            <a class="cart-link" href="#">
+              <img class="cart-icon" src="" alt="иконка корзины">
+              <span class="cart-iteraction-text">Корзина: </span>
+              <span class="cart-iteraction-counter">10</span>
+            </a>
           </li>
           <li class="user-iteraction-item">
             <a class="checkout-iteraction-link" href="#">
@@ -225,15 +233,13 @@
             <img class="new-content-icon" src="" alt="значок нового товара">
             <ul class="user-interface-btn-list">
               <li class="user-interface-btn-item">
-                <!-- TODO: type="button" or type="submit" -->
-                <button class="btn-buy">
+                <button class="btn-buy" type="button">
                   <img class="cart-icon" src="" alt="иконка корзины">
                   КУПИТЬ
                 </button>
               </li>
               <li class="user-interface-btn-item">
-                <!-- TODO: type="button" or type="submit" -->
-                <button class="btn-add-bookmarks">
+                <button class="btn-add-bookmarks" type="button">
                   В закладки
                 </button>
               </li>
@@ -442,18 +448,16 @@
       <button class="modal-close" type="button">Закрыть(иконка-крестик)</button>
       <div class="modal-check-icon"></div>
       <h2>Товар добавлен в корзину!</h2>
-      <ul>
-        <li>
-          <a class="checkout-order" href="#">
+      <p class="modal-checkout">
+        <a class="checkout-order" href="#">
             ОФОРМИТЬ ЗАКАЗ
-          </a>
-        </li>
-        <li>
-          <button class="continue-shopping" type="button">
-            ПРОДОЛЖИТЬ ПОКУПКИ
-          </button>
-        </li>
-      </ul>
+        </a>
+      </p>
+      <p class="modal-continue-shopping">
+        <button class="continue-shopping" type="button">
+          ПРОДОЛЖИТЬ ПОКУПКИ
+        </button>
+      </p>
     </section>
   </body>
 </html>
