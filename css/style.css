@@ -80,7 +80,7 @@ a {
   color: #ee3643;
 }
 
-.header-phone + span {
+.phone-number {
   font-size: 14px;
   line-height: 1.71;
   color: #32425c;
