@@ -1,7 +1,7 @@
+/* -------------------------body------------------------- */
 body {
   margin: 0;
   padding: 0;
-
   font-family: 'Cuprum', Arial, sans-serif;
   color: #000000;
 }
@@ -21,23 +21,6 @@ a {
   overflow: hidden;
 }
 
-.header-site-logo div,
-.footer-site-logo div {
-  width: 220px;
-  height: 47px;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-  background-color: #ee3643;
-  text-align: center;
-}
-
-.footer-site-logo div {
-  height: 68px;
-}
-
-.header {
-  background-color: #f4f7f9;
-}
-
 .user-iteraction-list,
 .sign-in-up-list,
 .header-nav-list,
@@ -53,6 +36,20 @@ a {
 .content-list,
 .user-interface-btn-list {
   list-style: none;
+}
+
+/* -------------------------header------------------------- */
+.header {
+  background-color: #f4f7f9;
+}
+
+/* -------------------------header-top-area------------------------- */
+.header-site-logo div {
+  width: 220px;
+  height: 47px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  text-align: center;
 }
 
 .header-top-area {
@@ -72,6 +69,56 @@ a {
   background-color: #63a63e;
 }
 
+/* TODO: доделать когда курсор в поле поиска */
+.search-header-form input {
+  border-width: 0;
+  background-color: #293449;
+}
+
+.search-header-form input::placeholder {
+  font-size: 17px;
+  line-height: 1.06;
+  color: #ffffff;
+}
+
+.search-header-form input:hover {
+  background-color: #212a3a;
+}
+
+.search-header-form input:active {
+  background-color: #293449;
+}
+
+.bookmark-link:hover,
+.cart-link:hover {
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+}
+
+.bookmark-link:active,
+.cart-link:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header-site-logo div:hover {
+  background-color: #ca2c37;
+}
+
+.header-site-logo div:active {
+  background-color: #ba2732;
+}
+
+.checkout-iteraction-link:hover {
+  background-color: #5fbb2d;
+}
+
+.checkout-iteraction-link:active {
+  background-color: #518534;
+  color: rgba 255 255 255, 0.5;
+}
+
+/* -------------------------header-middle-area------------------------- */
 .header-middle-area h1{
   font-size: 16px;
   font-style: italic;
@@ -98,6 +145,15 @@ a {
   color: #000000;
 }
 
+.sign-in-up-list a:hover {
+  color: #ee3643;
+}
+
+.sign-in-up-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------------header-nav------------------------- */
 .header-nav {
   background-color: #32425c;
   color: #ffffff;
@@ -109,55 +165,52 @@ a {
   color: #ffffff;
 }
 
-.footer-top {
+.header-nav-list a:hover {
+  box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
 }
 
-.footer-nav-top a {
-  font-size: 18px;
-  line-height: 1.33;
-  color: #f1f5f7;
+.header-nav-list a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.footer-adress {
-  font-size: 18px;
-  line-height: 1.33;
-  color: #f3f7f9;
+/* -------------------------{header-catalog (top, middle, nav}------------------------- */
+.added-content-item {
+  background-color: #ee3643;
 }
 
-.footer-nav-bottom a {
-  font-size: 18px;
-  line-height: 1.33;
-  color: #ffd180;
-}
-
-.footer-bottom {
-  background-color: #293449;
-}
-
-.copyright {
-  font-size: 16px;
-  line-height: 1.13;
-  color: #ffffff;
-}
-
-.developers-contacts-list {
-  font-size: 16px;
-  line-height: 1.13;
-  color: #ffffff;
-}
-
-.developers-contacts-list a {
-  color: #ffd180;
-}
-
-.breadcrumbs-list a {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 1.38;
+.signed-user a {
+  font-size: 21px;
+  line-height: 1;
   color: #000000;
 }
 
+.user-link-list {
+  font-size: 16px;
+  line-height: 1.13;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-link-list a:hover {
+  color: #ee3643;
+}
+
+.user-link-list a:active,
+.signed-user a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.added-content-item .cart-link:hover {
+  background-color: #ca2c37;
+}
+
+.added-content-item .cart-link:active {
+  background-color: #ba2732;
+}
+
+/* -------------------------main------------------------- */
 .about-company h2,
 .main-contacts h2 {
   font-size: 30px;
@@ -191,24 +244,18 @@ a {
   text-transform: uppercase;
 }
 
-.added-content-item {
-  background-color: #ee3643;
+.about-company-button:hover,
+.find-us-btn:hover {
+  background-color: #ca2c37;
 }
 
-.signed-user a {
-  font-size: 21px;
-  line-height: 1;
-  color: #000000;
+.about-company-button:active,
+.find-us-btn:active {
+  background-color: #ba2732;
 }
 
-.user-link-list {
-  font-size: 16px;
-  line-height: 1.13;
-  color: #32425c;
-  text-decoration: underline;
-}
-
-.breadcrumbs-list {
+/* -------------------------catalog-main------------------------- */
+.breadcrumbs-list a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
@@ -286,67 +333,6 @@ a {
   text-align: center;
 }
 
-/* TODO: доделать когда курсор в поле поиска */
-.search-header-form input {
-  border-width: 0;
-  background-color: #293449;
-}
-
-.search-header-form input::placeholder {
-  font-size: 17px;
-  line-height: 1.06;
-  color: #ffffff;
-}
-
-.search-header-form input:hover {
-  background-color: #212a3a;
-}
-
-.search-header-form input:active {
-  background-color: #293449;
-}
-
-.sign-in-up-list a:hover,
-.user-link-list a:hover {
-  color: #ee3643;
-}
-
-.sign-in-up-list a:active,
-.user-link-list a:active,
-.signed-user a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.bookmark-link:hover,
-.cart-link:hover {
-  box-shadow: inset 0px -5px 0 0 #293449;
-  background-color: #32425c;
-}
-
-.bookmark-link:active,
-.cart-link:active {
-  background-color: #1d2739;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.added-content-item .cart-link:hover {
-  background-color: #ca2c37;
-}
-
-.added-content-item .cart-link:active {
-  background-color: #ba2732;
-}
-
-.about-company-button:hover,
-.find-us-btn:hover {
-  background-color: #ca2c37;
-}
-
-.about-company-button:active,
-.find-us-btn:active {
-  background-color: #ba2732;
-}
-
 .btn-buy {
   width: 135px;
   height: 38px;
@@ -386,10 +372,42 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
+/* -------------------------footer------------------------- */
 .footer-nav-top a:hover,
 .footer-nav-bottom a:hover,
 .developers-contacts-list a:hover {
   text-decoration: underline;
+}
+
+/* -------------------------footer-top (footer-nav-top, footer-nav-bottom) ------------------------- */
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-site-logo div {
+  height: 68px;
+  width: 220px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  text-align: center;
+}
+
+.footer-nav-top a {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #f1f5f7;
+}
+
+.footer-nav-bottom a {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffd180;
+}
+
+.footer-adress {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #f3f7f9;
 }
 
 .footer-nav-top a:active {
@@ -400,38 +418,33 @@ a {
   color: rgba(255, 209, 128, 0.5);
 }
 
+/* -------------------------footer-bottom------------------------- */
+.footer-bottom {
+  background-color: #293449;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 1.13;
+  color: #ffffff;
+}
+
+.developers-contacts-list {
+  font-size: 16px;
+  line-height: 1.13;
+  color: #ffffff;
+}
+
+.developers-contacts-list a {
+  color: #ffd180;
+}
+
 .developers-contacts-list a:active {
   color: #ee3643;
   text-decoration: none;
 }
 
-.header-site-logo div:hover {
-  background-color: #ca2c37;
-}
-
-.header-site-logo div:active {
-  background-color: #ba2732;
-}
-
-.checkout-iteraction-link:hover {
-  background-color: #5fbb2d;
-}
-
-.checkout-iteraction-link:active {
-  background-color: #518534;
-  color: rgba 255 255 255, 0.5;
-}
-
-.header-nav-list a:hover {
-  box-shadow: inset 0px -5px 0 0 #293449;
-  background-color: #32425c;
-}
-
-.header-nav-list a:active {
-  background-color: #1d2739;
-  color: rgba(255, 255, 255, 0.5);
-}
-
+/* -------------------------modal------------------------- */
 .modal{
   display: none;
 }
