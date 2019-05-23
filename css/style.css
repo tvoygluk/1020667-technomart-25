@@ -4,11 +4,12 @@ body {
 
   font-family: 'Cuprum', Arial, sans-serif;
   color: #000000;
-  /* text-transform: uppercase; */
 }
+
 a {
   text-decoration: none;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -28,12 +29,15 @@ a {
   background-color: #ee3643;
   text-align: center;
 }
+
 .footer-site-logo div {
   height: 68px;
 }
+
 .header {
   background-color: #f4f7f9;
 }
+
 .user-iteraction-list,
 .sign-in-up-list,
 .header-nav-list,
@@ -63,6 +67,8 @@ a {
 }
 
 .checkout-iteraction-link {
+  width: 150px;
+  height: 42px;
   background-color: #63a63e;
 }
 
@@ -74,13 +80,13 @@ a {
   color: #ee3643;
 }
 
-.header-phone span {
+.phone-number {
   font-size: 21px;
   line-height: 1;
   color: #ee3643;
 }
 
-.phone-number {
+.header-phone span {
   font-size: 14px;
   line-height: 1.71;
   color: #32425c;
@@ -94,6 +100,7 @@ a {
 
 .header-nav {
   background-color: #32425c;
+  color: #ffffff;
 }
 
 .header-nav a{
@@ -105,16 +112,19 @@ a {
 .footer-top {
   background-color: #32425c;
 }
+
 .footer-nav-top a {
   font-size: 18px;
   line-height: 1.33;
   color: #f1f5f7;
 }
+
 .footer-adress {
   font-size: 18px;
   line-height: 1.33;
   color: #f3f7f9;
 }
+
 .footer-nav-bottom a {
   font-size: 18px;
   line-height: 1.33;
@@ -136,8 +146,16 @@ a {
   line-height: 1.13;
   color: #ffffff;
 }
+
 .developers-contacts-list a {
   color: #ffd180;
+}
+
+.breadcrumbs-list a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  color: #000000;
 }
 
 .about-company h2,
@@ -155,7 +173,6 @@ a {
   font-size: 13px;
   line-height: 1.85;
   color: #000000;
-
 }
 
 .partners-list {
@@ -163,6 +180,7 @@ a {
   line-height: 1.11;
   color: #000000;
 }
+
 .about-company-button,
 .find-us-btn {
   background-color: #ee3643;
@@ -173,14 +191,16 @@ a {
   text-transform: uppercase;
 }
 
-.added-content-item a {
+.added-content-item {
   background-color: #ee3643;
 }
+
 .signed-user a {
   font-size: 21px;
   line-height: 1;
   color: #000000;
 }
+
 .user-link-list {
   font-size: 16px;
   line-height: 1.13;
@@ -212,6 +232,7 @@ a {
   line-height: 1.76;
   color: #000000;
 }
+
 .filter-form label {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
@@ -220,6 +241,7 @@ a {
   text-transform: uppercase;
   font-weight: normal;
 }
+
 .show-filtered-result {
   width: 140px;
   height: 38px;
@@ -242,18 +264,20 @@ a {
   text-align: center;
   color: #000000;
 }
+
 .content-price {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.06;
-
 }
+
 .previous-price {
   color: #999999;
   text-align: center;
   text-decoration: line-through;
 }
+
 .current-price {
   width: 141px;
   height: 38px;
@@ -261,54 +285,63 @@ a {
   color: #ffffff;
   text-align: center;
 }
+
 /* TODO: доделать когда курсор в поле поиска */
 .search-header-form input {
   border-width: 0;
   background-color: #293449;
 }
+
 .search-header-form input::placeholder {
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
 }
+
 .search-header-form input:hover {
   background-color: #212a3a;
 }
+
 .search-header-form input:active {
   background-color: #293449;
 }
-.user-iteraction-list a:active {
-  background-color: #161d29;
-  color: rgba 255 255 255, 0.6;
-}
-.checkout-iteraction-link:active {
-  background-color: #518534;
-  color: rgba 255 255 255, 0.5;
-}
+
 .sign-in-up-list a:hover,
 .user-link-list a:hover {
   color: #ee3643;
 }
+
 .sign-in-up-list a:active,
 .user-link-list a:active,
 .signed-user a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-nav-list a:hover {
+.bookmark-link:hover,
+.cart-link:hover {
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
 }
 
-.header-nav-list a:active {
+.bookmark-link:active,
+.cart-link:active {
   background-color: #1d2739;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.added-content-item .cart-link:hover {
+  background-color: #ca2c37;
+}
+
+.added-content-item .cart-link:active {
+  background-color: #ba2732;
 }
 
 .about-company-button:hover,
 .find-us-btn:hover {
   background-color: #ca2c37;
 }
+
 .about-company-button:active,
 .find-us-btn:active {
   background-color: #ba2732;
@@ -378,6 +411,25 @@ a {
 
 .header-site-logo div:active {
   background-color: #ba2732;
+}
+
+.checkout-iteraction-link:hover {
+  background-color: #5fbb2d;
+}
+
+.checkout-iteraction-link:active {
+  background-color: #518534;
+  color: rgba 255 255 255, 0.5;
+}
+
+.header-nav-list a:hover {
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+}
+
+.header-nav-list a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .modal{
