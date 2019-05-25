@@ -64,6 +64,7 @@ a {
 }
 
 .checkout-iteraction-link {
+  display: block;
   width: 150px;
   height: 42px;
   background-color: #63a63e;
