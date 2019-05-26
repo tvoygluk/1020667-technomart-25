@@ -79,7 +79,6 @@ a {
   background-color: #63a63e;
 }
 
-/* TODO: доделать когда курсор в поле поиска */
 .search-header-form input {
   border-width: 0;
   background-color: #293449;
@@ -476,7 +475,6 @@ a {
   display: none;
 }
 
-
 /* ------------------------- сеточные стили ------------------------- */
 /* body > * {background: rgba(255, 0, 0, 0.2) !important}
 body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
@@ -610,7 +608,7 @@ header {
 
 .filters-content-wrapper {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .filters-item {
@@ -620,7 +618,15 @@ header {
   width: 220px;
 }
 
+.content {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
 .content-list {
+  align-self: flex-end;
   display: flex;
   flex-wrap: wrap;
 }
@@ -643,8 +649,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-
-
 
 /* -------------------------footer------------------------- */
 footer {
