@@ -233,7 +233,7 @@ a {
   background-color: #ba2732;
 }
 
-/* -------------------------main------------------------- */
+/* -------------------------main (index)------------------------- */
 .about-company h2,
 .main-contacts h2 {
   font-size: 30px;
@@ -452,6 +452,10 @@ a {
   color: #ffffff;
 }
 
+.social-web-list a {
+  color: #ffffff;
+}
+
 .developers-contacts-list {
   font-size: 16px;
   line-height: 1.13;
@@ -549,4 +553,91 @@ header {
 .header-nav-list a {
   display: block;
   width: 100%;
+}
+/* -------------------------main (index)------------------------- */
+/* -------------------------catalog-main------------------------- */
+/* -------------------------footer------------------------- */
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------------footer-top (footer-nav-top, footer-nav-bottom) ------------------------- */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top-center {
+  width: 940px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-nav-top ul{
+  width: 547px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-top {
+  margin-top: 42px;
+}
+
+.footer-adress {
+  display: flexbox;
+  width: 323px;
+  margin-top: 32px;
+  margin-bottom: 53px;
+}
+
+.footer-nav-bottom ul{
+  width: 524px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-nav-bottom {
+  margin-top: auto;
+  margin-bottom: 76px;
+}
+
+/* -------------------------footer-bottom------------------------- */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 107px;
+}
+
+.footer-bottom-center {
+  width: 940px;
+  display: flex;
+
+}
+
+.copyright {
+  min-width: 230px;
+  margin-top: 39px;
+  margin-right: 161px;
+}
+
+.social-web-list {
+  display: flex;
+  margin-top: 35px;
+}
+
+.developers-contacts-list {
+  display: flex;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+.developers-contacts-list li {
+  margin-left: 53px;
 }
