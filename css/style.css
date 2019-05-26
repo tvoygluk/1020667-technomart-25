@@ -478,10 +478,10 @@ a {
 
 
 /* ------------------------- сеточные стили ------------------------- */
-/* body > * {background: rgba(255, 0, 0, 0.2) !important}
-body > * > * {background: rgba(255, 255, 0, 0.2) !important}
-body > * > * > * {background: rgba(0, 0, 255, 0.2) !important}
-body > * > * > * > * {background: rgba(0, 255, 255, 0.2) !important}*/
+/* body > * {background: rgba(255, 0, 0, 0.2) !important}*/
+/* body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
+/* body > * > * > * {background: rgba(0, 0, 255, 0.2) !important} */
+/* body > * > * > * > * {background: rgba(0, 255, 255, 0.2) !important} */
 
 /* -------------------------body------------------------- */
 body {
@@ -524,6 +524,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 940px;
+  height: 278px;
 }
 
 /* -------------------------header-middle-area------------------------- */
@@ -555,6 +556,32 @@ header {
   width: 100%;
 }
 /* -------------------------main (index)------------------------- */
+.index-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.company-contacts-wrapper {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 86px;
+  /* align-items: stretch; */
+}
+.about-company {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* retina ? */
+  width: 1040px;
+}
+.main-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 /* -------------------------catalog-main------------------------- */
 /* -------------------------footer------------------------- */
 footer {
