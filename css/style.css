@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 /* -------------------------body------------------------- */
 body {
   margin: 0;
@@ -36,6 +43,8 @@ a {
 .content-list,
 .user-interface-btn-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* -------------------------header------------------------- */
@@ -86,8 +95,12 @@ a {
   background-color: #212a3a;
 }
 
-.search-header-form input:active {
-  background-color: #293449;
+
+.search-header-form input:focus {
+  background-color: #ffffff;
+  font-size: 17px;
+  line-height: 1.06;
+  color: #000000;
 }
 
 .bookmark-link:hover,
@@ -158,6 +171,7 @@ a {
 .header-nav {
   background-color: #32425c;
   color: #ffffff;
+  box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 .header-nav a{
@@ -181,13 +195,21 @@ a {
   background-color: #ee3643;
 }
 
+.title-like-h1 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.44;
+  color: #ee3643;
+}
+
 .signed-user a {
   font-size: 21px;
   line-height: 1;
   color: #000000;
 }
 
-.user-link-list {
+.user-link-list a {
   font-size: 16px;
   line-height: 1.13;
   color: #32425c;
@@ -448,4 +470,83 @@ a {
 /* -------------------------modal------------------------- */
 .modal{
   display: none;
+}
+
+
+/* ------------------------- сеточные стили ------------------------- */
+/* body > * {background: rgba(255, 0, 0, 0.2) !important}
+body > * > * {background: rgba(255, 255, 0, 0.2) !important}
+body > * > * > * {background: rgba(0, 0, 255, 0.2) !important}
+body > * > * > * > * {background: rgba(0, 255, 255, 0.2) !important}*/
+
+/* -------------------------body------------------------- */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -------------------------header------------------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 320px;
+  margin-bottom: 59px;
+}
+
+/* -------------------------header-top-area------------------------- */
+.header-top-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.header-top-area-centering {
+  width: 940px;
+  display: flex;
+}
+
+.user-iteraction-list {
+  display: flex;
+}
+
+/* -------------------------header-middle-nav-wrapper------------------------- */
+.header-middle-nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 940px;
+}
+
+/* -------------------------header-middle-area------------------------- */
+.header-middle-area {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-up-list {
+  display: flex;
+}
+
+/* -------------------------header-nav------------------------- */
+.header-nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 940px;
+  height: 60px;
+}
+/* TODO: сделать выделение области, а не надписи  */
+.header-nav-list a {
+  display: block;
+  width: 100%;
 }
