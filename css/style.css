@@ -478,8 +478,8 @@ a {
 
 
 /* ------------------------- сеточные стили ------------------------- */
-/* body > * {background: rgba(255, 0, 0, 0.2) !important}*/
-/* body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
+/* body > * {background: rgba(255, 0, 0, 0.2) !important}
+body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
 /* body > * > * > * {background: rgba(0, 0, 255, 0.2) !important} */
 /* body > * > * > * > * {background: rgba(0, 255, 255, 0.2) !important} */
 
@@ -497,7 +497,6 @@ header {
   align-items: center;
   width: 100%;
   min-height: 320px;
-  margin-bottom: 59px;
 }
 
 /* -------------------------header-top-area------------------------- */
@@ -550,11 +549,13 @@ header {
   width: 940px;
   height: 60px;
 }
+
 /* TODO: сделать выделение области, а не надписи  */
 .header-nav-list a {
   display: block;
   width: 100%;
 }
+
 /* -------------------------main (index)------------------------- */
 .index-main {
   display: flex;
@@ -568,21 +569,80 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 86px;
-  /* align-items: stretch; */
 }
+
 .about-company {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* retina ? */
-  width: 1040px;
+
+  margin-right: 120px;
 }
+
 .main-contacts {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
 /* -------------------------catalog-main------------------------- */
+.catalog-main-center {
+  width: 940px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.breadcrumbs-list {
+  display: flex;
+  justify-content: space-between;
+  width: 358px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.catalog-main h1 {
+  margin: 0px;
+  height: 89px;
+  padding-top: 32px;
+  padding-left: 30px;
+}
+
+.filters-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.filters-item {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-item {
+  width: 220px;
+  height: 318px;
+  border: solid 1px #e5e5e5;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.content-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.user-interface-btn-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 /* -------------------------footer------------------------- */
 footer {
   width: 100%;
