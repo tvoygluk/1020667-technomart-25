@@ -128,7 +128,7 @@ a {
 
 .checkout-iteraction-link:active {
   background-color: #518534;
-  color: rgba 255 255 255, 0.5;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* -------------------------header-middle-area------------------------- */
@@ -682,7 +682,6 @@ footer {
 }
 
 .footer-adress {
-  display: flexbox;
   width: 323px;
   margin-top: 32px;
   margin-bottom: 53px;
