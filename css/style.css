@@ -592,6 +592,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .breadcrumbs-list {
   display: flex;
   justify-content: space-between;
@@ -633,9 +634,11 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .content-item:nth-child(3n) {
   margin-right: 0px;
 }
+
 .user-interface-btn-list {
   display: flex;
   flex-direction: column;
