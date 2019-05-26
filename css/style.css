@@ -94,7 +94,6 @@ a {
   background-color: #212a3a;
 }
 
-
 .search-header-form input:focus {
   background-color: #ffffff;
   font-size: 17px;
@@ -481,9 +480,15 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
 /* body > * > * > * > * {background: rgba(0, 255, 255, 0.2) !important} */
 
 /* -------------------------body------------------------- */
+.wrapper {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
 
 /* -------------------------header------------------------- */
-header {
+.header {
   width: 100%;
   min-height: 320px;
 }
@@ -495,8 +500,10 @@ header {
 }
 
 .header-top-area-centering {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
-  width: 940px;
   display: flex;
 }
 
@@ -506,8 +513,6 @@ header {
 
 /* -------------------------header-middle-nav-wrapper------------------------- */
 .header-middle-nav-wrapper {
-  margin: 0 auto;
-  width: 940px;
   height: 278px;
 }
 
@@ -533,20 +538,24 @@ header {
   width: inherit;
   height: 60px;
 }
-.header-nav-list li {
-  display: flex;
 
+.header-nav-list li {
+  flex-grow: 1;
 }
+
 .header-nav-list a {
+  text-decoration: none;
   display: flex;
   align-items: center;
-  padding: 0 33.75px;
+  justify-content: center;
+  font-size: 17px;
+  line-height: 1;
+  color: #ffffff;
+  height: 60px;
 }
 
 /* -------------------------main (index)------------------------- */
 .company-contacts-wrapper {
-  margin: 0 auto;
-  width: 940px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 86px;
@@ -556,7 +565,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   margin-right: 120px;
 }
 
@@ -568,8 +576,6 @@ header {
 
 /* -------------------------catalog-main------------------------- */
 .catalog-main-center {
-  margin: 0 auto;
-  width: 940px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -647,8 +653,6 @@ footer {
 }
 
 .footer-top-center {
-  margin: 0 auto;
-  width: 940px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -674,7 +678,6 @@ footer {
   width: 524px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .footer-nav-bottom {
@@ -689,8 +692,6 @@ footer {
 }
 
 .footer-bottom-center {
-  margin: 0 auto;
-  width: 940px;
   display: flex;
 }
 
