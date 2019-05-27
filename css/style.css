@@ -500,10 +500,6 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
 }
 
 .header-top-area-centering {
-  width: 960px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0 auto;
   display: flex;
 }
 
