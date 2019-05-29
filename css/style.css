@@ -1,6 +1,8 @@
 html {
+  min-width: 960px;
   box-sizing: border-box;
 }
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -598,7 +600,7 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
 }
 
 .filters-item {
-  align-self: center;
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   width: 220px;
