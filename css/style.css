@@ -894,10 +894,28 @@ a.added-content-item:active {
 
 .breadcrumbs-list {
   display: flex;
-  justify-content: space-between;
-  width: 358px;
+  justify-content: flex-start;
+  /* min-width: 358px; */
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.breadcrumbs-list li:not(:last-of-type) {
+  margin-right: 41px;
+  position: relative;
+}
+
+.breadcrumbs-list li:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -25px;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px 0 0 0;
+  background-color: white;
+  box-shadow: 1px 1px 0 1px #c1c6ce;
+  transform: rotate(-45deg) scale(0.7);
 }
 
 .catalog-main h1 {
