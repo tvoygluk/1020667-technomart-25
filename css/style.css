@@ -189,9 +189,7 @@ input[type="radio"].visually-hidden {
 }
 .bookmark-link:hover,
 .cart-link:hover {
-  /* background-color: #32425c; */
   background-color: #212a3a;
-
 }
 .cart-link {
   position: relative;
@@ -213,7 +211,6 @@ input[type="radio"].visually-hidden {
 
 .bookmark-link:active,
 .cart-link:active {
-  /* background-color: #1d2739; */
   background-color: #161d29;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -235,8 +232,9 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* -------------------------header-middle-area------------------------- */
-.header-middle-area h1{
+/* -------------------------header-middle-area (+some catalog)------------------------- */
+.header-middle-area h1,
+.title-like-h1 {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
@@ -293,17 +291,15 @@ input[type="radio"].visually-hidden {
 }
 
 /* -------------------------{header-catalog (top, middle, nav}------------------------- */
-.added-content-item {
-  background-color: #ee3643;
-}
 
-.title-like-h1 {
+
+/* .title-like-h1 {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
   line-height: 1.44;
   color: #ee3643;
-}
+} */
 
 .signed-user a {
   font-size: 21px;
@@ -326,14 +322,29 @@ input[type="radio"].visually-hidden {
 .signed-user a:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
-.added-content-item .cart-link:hover {
-  background-color: #ca2c37;
+.user-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-right: 71px;
 }
 
-.added-content-item .cart-link:active {
-  background-color: #ba2732;
+
+.user-link-item:not(:first-of-type) {
+  margin-left: 32px;
+  position: relative;
 }
+.user-link-item:not(:first-of-type)::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
+  position: absolute;
+  left: -18px;
+  top: 7px;
+}
+
 
 /* -------------------------main (index)------------------------- */
 .about-company h2,
@@ -621,6 +632,16 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
   display: block;
 
 }
+/* -------------------------header-top-area (catalog)------------------------- */
+a.added-content-item {
+  background-color: #ee3643;
+}
+a.added-content-item:hover {
+  background-color: #ca2c37;
+}
+a.added-content-item:active {
+  background-color: #ba2732;
+}
 
 /* -------------------------header-middle-nav-wrapper------------------------- */
 .header-middle-nav-wrapper {
@@ -636,7 +657,8 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
   margin-bottom: 44px;
 }
 
-.header-middle-area h1{
+.header-middle-area h1,
+.title-like-h1 {
   margin: 0px 0px 0px 53px;
   white-space: pre-wrap;
   width: 197px;
@@ -647,7 +669,7 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .header-contacts span {
   display: block;
@@ -710,11 +732,60 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
   fill: #c5c5c5;
 }
 
-
 .sign-up-link {
   padding: 13px 24px 11px 24px;
 }
+/* -------------------------header-middle-area (catalog)------------------------- */
 
+.signed {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.signed-user {
+
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.signed-user-link {
+  width: 257px;
+  display: flex;
+  flex-wrap: wrap;
+  /* display: block; */
+  position: relative;
+  padding: 13px 24px 11px 46px;
+}
+.signed-user-link:hover .signed-user-icon {
+  fill: #36415a;
+}
+.signed-user-link:active .signed-user-icon {
+  fill: #c5c5c5;
+}
+.user-log-out:hover .user-log-out-icon {
+  fill: #36415a;
+}
+.user-log-out:active .user-log-out-icon {
+  fill: #c5c5c5;
+}
+.signed-user-icon {
+  position: absolute;
+  fill: #c5c5c5;
+  top: 13px;
+  left: 13px;
+}
+.user-log-out {
+  display: block;
+  width: 44px;
+  position: relative;
+}
+.user-log-out-icon {
+  position: absolute;
+  fill: #c5c5c5;
+  top: 14px;
+  right: 10px;
+}
 /* -------------------------header-nav------------------------- */
 .header-nav-list {
   display: flex;
