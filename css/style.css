@@ -120,7 +120,7 @@ input[type="radio"].visually-hidden {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.search-header-form input {
+.search-input {
   padding-top: 0px;
   height: 42px;
   width: 221px;
@@ -128,7 +128,7 @@ input[type="radio"].visually-hidden {
   background-color: #293449;
 }
 
-.search-header-form input::placeholder {
+.search-input::placeholder {
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
@@ -141,34 +141,36 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   background-color: #212a3a;
 }
-.search-header-form input:hover {
+.search-input:hover {
   background-color: #212a3a;
 }
 
-.search-header-form input:hover + .search-button {
+.search-input + .search-button:hover  {
+
   background-color: #212a3a;
 }
 
-.search-header-form input:hover + .search-button .search-icon {
+
+.search-input:hover + .search-button {
+  background-color: #212a3a;
+}
+
+.search-input:hover + .search-button .search-icon {
   fill: rgb(255, 255, 255);
 }
 
-.search-header-form input:focus + .search-button {
+.search-input:focus + .search-button {
   background-color: #ffffff;
 }
-.search-header-form input:focus + .search-button .search-icon {
+.search-input:focus + .search-button .search-icon {
   fill: #ee3643;
 }
-.search-header-form input:focus {
+.search-input:focus {
   background-color: #ffffff;
   font-size: 17px;
   line-height: 1.06;
   color: #000000;
 }
-
-
-
-
 .bookmark-link {
   position: relative;
 }
@@ -179,18 +181,40 @@ input[type="radio"].visually-hidden {
   left: 17px;
   fill: rgba(255, 255, 255, 0.3);
 }
-.bookmark-link:hover .bookmark-icon{
+.bookmark-link:hover .bookmark-icon {
   fill: rgba(255, 255, 255, 1);
+}
+.bookmark-link:focus .bookmark-icon {
+  fill: rgba(255, 255, 255, 0.5);
 }
 .bookmark-link:hover,
 .cart-link:hover {
-  /* box-shadow: inset 0px -5px 0 0 #293449; */
-  background-color: #32425c;
+  /* background-color: #32425c; */
+  background-color: #212a3a;
+
+}
+.cart-link {
+  position: relative;
+}
+.cart-icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 18px;
+  fill: rgba(255, 255, 255, 0.3);
+}
+.cart-link:hover .cart-icon {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.cart-link:focus .cart-icon {
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .bookmark-link:active,
 .cart-link:active {
-  background-color: #1d2739;
+  /* background-color: #1d2739; */
+  background-color: #161d29;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -571,7 +595,7 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
 /* -------------------------header------------------------- */
 .header {
   width: 100%;
-  min-height: 320px;
+  min-height: 325px;
 }
 
 /* -------------------------header-top-area------------------------- */
@@ -602,22 +626,95 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
 
 /* -------------------------header-middle-nav-wrapper------------------------- */
 .header-middle-nav-wrapper {
-  height: 278px;
+  /* min-height: 278px; */
+  margin-top: 46px;
 }
 
 /* -------------------------header-middle-area------------------------- */
 .header-middle-area {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 44px;
 }
 
-.header-contacts {
-  display: flex;
-  flex-direction: column;
+.header-middle-area h1{
+  margin: 0px 0px 0px 53px;
+  white-space: pre-wrap;
+  width: 197px;
 }
 
+.header-contacts {
+  margin: 0px auto 0px 71px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-contacts span {
+  display: block;
+}
+.header-phone {
+  width: 270px;
+  height: 45px;
+  border: solid 3px #ffffff;
+  position: relative;
+  margin-bottom: 4px;
+}
+.phone-number {
+  display: block;
+  padding-top: 9px;
+  padding-left: 71px;
+}
+.phone-icon {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 9px;
+  left: 15px;
+  cursor: pointer;
+}
+.header-phone-address {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #32425c;
+}
 .sign-in-up-list {
   display: flex;
+}
+
+.sign-in-up-list a{
+  display: block;
+  background-color: #ffffff;
+  margin-left: 10px;
+}
+
+.sign-in-link {
+  padding: 13px 27px 11px 48px;
+  position: relative;
+}
+
+.login-icon {
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  top: 14px;
+  left: 14px;
+  fill: #c5c5c5;
+}
+
+.sign-in-link:hover .login-icon {
+  fill: #36415a;
+}
+.sign-in-link:active .login-icon {
+  fill: #c5c5c5;
+}
+
+
+.sign-up-link {
+  padding: 13px 24px 11px 24px;
 }
 
 /* -------------------------header-nav------------------------- */
@@ -625,7 +722,6 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .header-nav-list a {
