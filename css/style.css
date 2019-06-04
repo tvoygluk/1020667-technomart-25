@@ -81,27 +81,18 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   line-height: 1.06;
   font-size: 17px;
-  /* min-height: 42px; */
 }
 
 .header-top-area a {
   color: #ffffff;
-  /* line-height: 1.06;
-  font-size: 17px; */
-
 }
-/* TODO: class <li>*/
 .user-iteraction-list a {
   display: block;
   width: 150px;
   height: 42px;
   padding-top: 11.5px;
-
-
 }
-/* .user-iteraction-list li {
-  padding-left: 0px;
-} */
+
 .bookmark-text {
   text-align: left;
   padding-left: 44px;
@@ -118,28 +109,26 @@ input[type="radio"].visually-hidden {
 
 .search-button {
   position: absolute;
-  top: 10px;
-  left: 240px;
+  width: 49px;
+  height: 42px;
+  top: 0px;
+  left: 230px;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
-  /* fill: #ffffff; */
-
 }
 .search-icon {
   fill: rgba(255, 255, 255, 0.3);
-  /* z-index: 10; */
 }
 
 .search-header-form input {
   padding-top: 0px;
   height: 42px;
-  width: 270px;
+  width: 221px;
   border-width: 0;
   background-color: #293449;
 }
 
 .search-header-form input::placeholder {
-
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
@@ -148,16 +137,37 @@ input[type="radio"].visually-hidden {
 .search-button:hover .search-icon {
   fill: rgb(255, 255, 255);
 }
+.search-button:hover  {
+  cursor: pointer;
+  background-color: #212a3a;
+}
 .search-header-form input:hover {
   background-color: #212a3a;
 }
 
+.search-header-form input:hover + .search-button {
+  background-color: #212a3a;
+}
+
+.search-header-form input:hover + .search-button .search-icon {
+  fill: rgb(255, 255, 255);
+}
+
+.search-header-form input:focus + .search-button {
+  background-color: #ffffff;
+}
+.search-header-form input:focus + .search-button .search-icon {
+  fill: #ee3643;
+}
 .search-header-form input:focus {
   background-color: #ffffff;
   font-size: 17px;
   line-height: 1.06;
   color: #000000;
 }
+
+
+
 
 .bookmark-link {
   position: relative;
@@ -579,7 +589,7 @@ body > * > * {background: rgba(255, 255, 0, 0.2) !important} */
 }
 
 .user-iteraction-list {
-  margin-left: 220px;
+  margin-left: 269px;
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
