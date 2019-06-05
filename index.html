@@ -290,35 +290,33 @@
       </div>
     </footer>
     <section class="modal modal-find-us">
+      <div class="modal-find-us-top"></div>
+      <div class="modal-find-us-bottom"></div>
       <h2 class="visually-hidden">Написать в компанию</h2>
       <form class="find-us-form" action="https://echo.htmlacademy.ru" method="POST">
-        <p class="find-us-item-name">
-          <label for="name-find-us">
-            Ваше  имя:
+        <p class="name-male">
+          <label class="name">
+            <span class="your-name">Ваше  имя:</span>
+            <input type="text" name="find-us-name" placeholder="Имя Фамилия">
           </label>
-          <input type="text" id="name-find-us" name="find-us-name" placeholder="Имя Фамилия">
-        </p>
-        <p class="find-us-item-label">
-          <label for="male-find-us">
-            Ваш e-mail:
+          <label class="password">
+            <span class="your-password">Ваш e-mail:</span>
+            <input type="password" name="find-us-male" placeholder="email@example.com">
           </label>
-          <input type="password" id="male-find-us" name="find-us-male" placeholder="email@example.com">
         </p>
-        <p class="find-us-item-letter">
-          <label for="letter-find-us">
-            Текст письма:
-          </label>
-          <textarea id="letter-find-us" name="find-us-letter" rows="4" placeholder="В свободной форме"></textarea>
-        </p>
+        <label class="letter">
+          <span class="your-letter">Текст письма:</span>
+          <textarea name="find-us-letter" rows="4" placeholder="В свободной форме"></textarea>
+        </label>
         <button class="submit-find-us">ОТПРАВИТЬ</button>
       </form>
       <button class="modal-close" type="button">Закрыть(иконка-крестик)</button>
     </section>
-    <section class="modal modal-map">
+    <!-- <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <button class="modal-close" type="button">Закрыть(иконка-крестик)</button>
       <img src="img/map-big.jpg" width="940" height="447" alt="Офис компании по адресу Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8">
-    </section>
+    </section> -->
   </body>
 </html>
 

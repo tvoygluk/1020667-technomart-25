@@ -145,11 +145,6 @@ input[type="radio"].visually-hidden {
   background-color: #212a3a;
 }
 
-/* .search-input + .search-button:hover  {
-
-  background-color: #212a3a;
-} */
-
 
 .search-input:hover + .search-button {
   background-color: #212a3a;
@@ -602,9 +597,202 @@ input[type="radio"].visually-hidden {
 }
 
 /* -------------------------modal------------------------- */
-.modal{
-  display: none;
+.modal-cart-added {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  margin-left: -310px;
+  width: 620px;
+  height: 275px;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #db474a;
+  z-index: 15;
 }
+.modal-cart-added-top {
+  position: relative;
+  width: 100%;
+  min-height: 170px;
+  background-color: #ffffff;
+}
+.modal-cart-added-bottom {
+  position: relative;
+  width: 100%;
+  min-height: 105px;
+  background-color: #f1f1f1;
+}
+.modal-cart-added-top h2,
+.checkout-order,
+.continue-shopping,
+.modal-close,
+.mark-icon {
+  position: absolute;
+}
+
+.modal-cart-added-top h2 {
+  font-size: 30px;
+  line-height: 1;
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+  top: 70px;
+  left: 179px;
+  font-weight: normal;
+
+}
+.mark-icon {
+  width: 66px;
+  height: 66px;
+  top: 50px;
+  left: 81px;
+}
+.modal-close {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 20;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 6px;
+  width: 30px;
+  height: 4px;
+  background-color:#ee3643;
+  border-radius: 1px;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.checkout-order,
+.continue-shopping {
+  width: 220px;
+  height: 38px;
+  top: 34px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.checkout-order {
+  left: 80px;
+  background-color: #ee3643;
+  padding-top: 10px;
+  color: #ffffff;
+}
+.continue-shopping {
+  right: 80px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal-find-us {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -215px;
+  margin-left: -310px;
+  width: 620px;
+  height: 423px;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #db474a;
+  z-index: 15;
+}
+
+.modal-find-us-top {
+  /* position: relative; */
+  width: 100%;
+  min-height: 311px;
+  background-color: #ffffff;
+}
+
+.modal-find-us-bottom {
+  /* position: relative; */
+  width: 100%;
+  min-height: 105px;
+  background-color: #f1f1f1;
+}
+
+.find-us-form {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px 0px 0px 80px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  justify-content: flex-start;
+}
+
+.name-male {
+  margin-top: 48px;
+}
+.letter {
+  margin-top: 22px;
+}
+.submit-find-us {
+  margin-top: 74px;
+}
+.name-male {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.name,
+.password,
+.letter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.your-name,
+.your-password,
+.your-letter {
+  font-size: 18px;
+  line-height: 1;
+  text-align: left;
+  color: #000000;
+  display: block;
+  margin-bottom: 8px;
+}
+.submit-find-us {
+  width: 460px;
+  min-height: 38px;
+  background-color: #ee3643;
+  color: #ffffff;
+  border-radius: 2px;
+}
+/* for example
+.search-input {
+  padding-top: 0px;
+  height: 42px;
+  width: 221px;
+  border-width: 0;
+  background-color: #293449;
+}
+
+.search-input::placeholder {
+  font-size: 17px;
+  line-height: 1.06;
+  color: #ffffff;
+} */
 
 /* ------------------------- сеточные стили ------------------------- */
 /* body > * {background: rgba(255, 0, 0, 0.2) !important}
@@ -709,7 +897,6 @@ a.added-content-item:active {
   cursor: pointer;
 }
 .header-phone-address {
-  font-family: Cuprum;
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
@@ -987,9 +1174,11 @@ a.added-content-item:active {
 .show-filtered-result {
   margin-top: 76px;
 }
-.check, .radio {
+.check,
+.radio {
   position: relative;
   padding-left: 20px;
+  cursor: pointer;
 }
 .check-input,
 .radio-input {
