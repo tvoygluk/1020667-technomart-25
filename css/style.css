@@ -702,29 +702,28 @@ input[type="radio"].visually-hidden {
 
 .modal-find-us {
   display: block;
+  /* display: none; */
   position: fixed;
   top: 50%;
   left: 50%;
   margin-top: -215px;
   margin-left: -310px;
   width: 620px;
-  height: 423px;
+  height: 430px;
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
   border-top: 7px solid #db474a;
   z-index: 15;
 }
 
 .modal-find-us-top {
-  /* position: relative; */
   width: 100%;
   min-height: 311px;
   background-color: #ffffff;
 }
 
 .modal-find-us-bottom {
-  /* position: relative; */
   width: 100%;
-  min-height: 105px;
+  min-height: 112px;
   background-color: #f1f1f1;
 }
 
@@ -741,13 +740,13 @@ input[type="radio"].visually-hidden {
 }
 
 .name-male {
-  margin-top: 48px;
+  margin-top: 45px;
 }
 .letter {
-  margin-top: 22px;
+  margin-top: 5px;
 }
 .submit-find-us {
-  margin-top: 74px;
+  margin-top: 72px;
 }
 .name-male {
   display: flex;
@@ -760,6 +759,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .your-name,
@@ -779,20 +779,56 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   border-radius: 2px;
 }
-/* for example
-.search-input {
-  padding-top: 0px;
-  height: 42px;
-  width: 221px;
-  border-width: 0;
-  background-color: #293449;
+
+.name input,
+.password input{
+  width: 220px;
+  height: 38px;
+
+}
+.name input,
+.password input,
+.letter textarea {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: left;
+  color: #a9a9a9;
+  padding-left: 10px;
+  border-radius: 2px;
+  border: solid 2px #d7dcde;
+}
+.name input:hover,
+.password input:hover,
+.letter textarea:hover {
+  border-color: #b5b5b5;
+}
+.name input:focus,
+.password input:focus,
+.letter textarea:focus {
+  outline-color: #ee3643;
+  border-color: #ee3643;
 }
 
-.search-input::placeholder {
-  font-size: 17px;
-  line-height: 1.06;
-  color: #ffffff;
-} */
+.letter textarea {
+  padding-top: 7px;
+  resize: none;
+  height: 114px;
+}
+
+.modal-map {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -310px;
+  margin-left: -470px;
+  width: 940px;
+  height: 447px;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  z-index: 25;
+}
+
 
 /* ------------------------- сеточные стили ------------------------- */
 /* body > * {background: rgba(255, 0, 0, 0.2) !important}
