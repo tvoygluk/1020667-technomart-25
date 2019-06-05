@@ -958,6 +958,7 @@ a.added-content-item:active {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .content-item:nth-child(3n) {
@@ -965,8 +966,26 @@ a.added-content-item:active {
 }
 
 .user-interface-btn-list {
-  display: flex;
-  flex-direction: column;
+  /* display: none; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 218px;
+  height: 170px;
+  padding: 44px 0;
+  background-color: #11dbaf73;
+}
+
+.user-interface-btn-list li {
+  margin: 0 auto 7px;
+  /* padding: 10px 0; */
+}
+
+.user-interface-btn-item button {
+  display: block;
+  margin: 0 auto;
+  border-width: 0px;
+  border-radius: 2px;
 }
 
 /* -------------------------footer------------------------- */
