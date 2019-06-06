@@ -147,13 +147,26 @@ input[type="radio"].visually-hidden {
 .search-icon {
   fill: rgba(255, 255, 255, 0.3);
 }
+/* ==============================Префиксы================================== */
 
 .search-input {
-  padding-top: 0px;
   height: 42px;
   width: 221px;
   border-width: 0;
   background-color: #293449;
+  padding: 9px 0;
+}
+
+.search-input::-webkit-input-placeholder {
+  font-size: 17px;
+  line-height: 1.06;
+  color: #ffffff;
+}
+
+.search-input:-ms-input-placeholder {
+  font-size: 17px;
+  line-height: 1.06;
+  color: #ffffff;
 }
 
 .search-input::placeholder {
@@ -161,7 +174,7 @@ input[type="radio"].visually-hidden {
   line-height: 1.06;
   color: #ffffff;
 }
-
+/* ================================================================ */
 .search-button:hover .search-icon {
   fill: rgb(255, 255, 255);
 }
@@ -936,7 +949,6 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   line-height: 1.06;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -1546,5 +1558,5 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-  display: block;
+  display: none;
 }
