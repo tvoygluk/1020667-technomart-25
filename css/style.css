@@ -52,7 +52,9 @@ input[type="radio"].visually-hidden {
 .manufacturers-checkbox-list,
 .supply-radiobutton-list,
 .content-list,
-.user-interface-btn-list {
+.user-interface-btn-list,
+.products-list,
+.manufacturers-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -434,7 +436,7 @@ input[type="radio"].visually-hidden {
 /* -------------------------main index promo------------------------- */
 .promo {
   margin-top: 59px;
-  margin-bottom: 53px;
+  margin-bottom: 32px;
 }
 .promo-list {
   height: 430px;
@@ -684,6 +686,53 @@ input[type="radio"].visually-hidden {
   z-index: 2;
   display: none;
 }
+/* -------------------------main (index) tipical-block, popular-products-block, popular-manufacturers-block------------------------- */
+.tipical-block h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 21px 0px;
+  padding: 1px;
+  width: 100%;
+  min-height: 89px;
+  background-color: #f9f5f0;
+  font-weight: normal;
+}
+
+.tipical-block .h2-title-like {
+  display: block;
+  margin: 31px 30px 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #32425c;
+}
+
+.popular-products-link,
+.popular-manufacturers-link {
+  display: block;
+  min-height: 38px;
+  width: 253px;
+  background-color: #ee3643;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 2px;
+  color: #ffffff;
+  margin: 25px 24px 26px;
+  padding: 12px 10px 10px;
+}
+
+.popular-products-link:hover,
+.popular-manufacturers-link:hover {
+  background-color: #ca2c37;
+}
+
+.popular-products-link:active,
+.popular-manufacturers-link:active {
+  background-color: #ba2732;
+}
+
 
 /* -------------------------main (index)------------------------- */
 .about-company h2,
