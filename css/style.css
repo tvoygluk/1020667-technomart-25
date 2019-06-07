@@ -686,7 +686,8 @@ input[type="radio"].visually-hidden {
   z-index: 2;
   display: none;
 }
-/* -------------------------main (index) tipical-block, popular-products-block, popular-manufacturers-block------------------------- */
+
+/* -------------------------main (index) tipical-block, popular-products-block------------------------- */
 .tipical-block h2 {
   display: flex;
   justify-content: space-between;
@@ -732,6 +733,82 @@ input[type="radio"].visually-hidden {
 .popular-manufacturers-link:active {
   background-color: #ba2732;
 }
+
+/* -------------------------main (index) manufacturers-list------------------------- */
+.popular-manufacturers-block {
+  margin-bottom: 63px;
+}
+
+.manufacturers-list {
+  margin-left: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.manufacturers-link {
+  display: block;
+  width: 220px;
+  height: 145px;
+  margin: 0px 0px 20px 20px;
+  border: solid 1px #eaeaea;
+  position: relative;
+}
+
+.manufacturers-link:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.manufacturers-link:active {
+  opacity: 0.3;
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.manufacturers-link img {
+  position: absolute;
+}
+
+.manufacturers-item:nth-child(1) img {
+  top: 53px;
+  left: 47px;
+}
+
+.manufacturers-item:nth-child(2) img {
+  top: 50px;
+  left: 48px;
+}
+
+.manufacturers-item:nth-child(3) img {
+  top: 48px;
+  left: 37px;
+}
+
+.manufacturers-item:nth-child(4) img {
+  top: 21px;
+  left: 9px;
+}
+
+.manufacturers-item:nth-child(5) img {
+  top: 58px;
+  left: 28px;
+}
+
+.manufacturers-item:nth-child(6) img {
+  top: 35px;
+  left: 48px;
+}
+
+.manufacturers-item:nth-child(7) img {
+  top: 23px;
+  left: 35px;
+}
+
+.manufacturers-item:nth-child(8) img {
+  top: 34px;
+  left: 10px;
+}
+
+/* -------------------------main (index) services------------------------- */
 
 
 /* -------------------------main (index)------------------------- */
