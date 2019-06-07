@@ -39,6 +39,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.none-class {
+  display: none;
+}
+
 .user-iteraction-list,
 .sign-in-up-list,
 .header-nav-list,
@@ -54,7 +58,8 @@ input[type="radio"].visually-hidden {
 .content-list,
 .user-interface-btn-list,
 .products-list,
-.manufacturers-list {
+.manufacturers-list,
+.services-menu-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -536,7 +541,7 @@ input[type="radio"].visually-hidden {
   width: 195px;
   background-color: #ee3643;
 }
-
+/*  */
 .slider a:hover,
 .second-hide-slider a:hover {
   background-color: #ca2c37;
@@ -809,9 +814,185 @@ input[type="radio"].visually-hidden {
 }
 
 /* -------------------------main (index) services------------------------- */
+.services {
+  width: 100%;
+  background-color: #f4f7f9;
+  overflow: hidden;
+}
 
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
 
-/* -------------------------main (index)------------------------- */
+.services-title {
+  width: 100%;
+  margin-bottom: 68px;
+}
+
+.services h2,
+.services h3 {
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+.services h2 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 68px;
+}
+
+.services-title span {
+  display: block;
+  margin-top: 26px;
+  width: 398px;
+}
+
+.services span {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #000000;
+}
+
+.services-menu-list {
+  width: 240px;
+  position: relative;
+}
+
+.services-menu-list::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  top: -48px;
+  right: 0px;
+}
+
+.services-menu-list,
+.services-sliders {
+  margin-bottom: 99px;
+}
+
+.services-menu-link {
+  display: block;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #ffffff;
+  min-height: 61px;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  background-color: #32425c;
+  padding: 14px 10px 10px 22px;
+}
+
+.active-service {
+  color: #32425c;
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+}
+
+.services-sliders {
+  width: 700px;
+  position: relative;
+}
+
+.services-sliders h3 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  color: #32425c;
+  margin: 0px 0px 24px 80px;
+}
+
+.services-sliders span {
+  display: block;
+  margin: 0px 0px 0px 80px;
+}
+
+/* -------------------------main (index) services-slider-first-------------------------- */
+.services-slider-first span {
+  width: 275px;
+}
+
+.services-slider-first::after {
+  content: "";
+  position: absolute;
+  background-size: 468px;
+  width: 468px;
+  height: 261px;
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  top: 21px;
+  right: 0px;
+}
+
+/* -------------------------main (index) services-slider-second-------------------------- */
+.services-slider-second span {
+  width: 377px;
+}
+
+.services-slider-second::after {
+  content: "";
+  position: absolute;
+  background-size: 389px;
+  width: 389px;
+  height: 283px;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0px;
+}
+
+/* -------------------------main (index) services-slider-third-------------------------- */
+.services-slider-third span {
+  width: 279px;
+}
+
+.services-slider-third::after {
+  content: "";
+  position: absolute;
+  background-size: 465px;
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0px;
+}
+
+.credit-link {
+  width: 195px;
+  min-height: 38px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  border-radius: 2px;
+  position: absolute;
+  left: 80px;
+  bottom: 12px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.credit-link:hover {
+  background-color: #ca2c37;
+}
+
+.credit-link:active {
+  background-color: #ba2732;
+}
+
+/* -------------------------main (index) about-company, main-contacts------------------------- */
 .about-company h2,
 .main-contacts h2 {
   font-size: 30px;
