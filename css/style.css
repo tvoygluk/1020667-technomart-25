@@ -72,6 +72,22 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.super-button {
+  padding: 0px;
+  margin: 0px;
+  border-width: 0px;
+  display: flex;
+  background-color: #ee3643;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  color: #ffffff;
+  /* padding: 10px; */
+  cursor: pointer;
+
+}
 /* -------------------------header------------------------- */
 .header {
   background-color: #f4f7f9;
@@ -99,6 +115,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .user-iteraction-list li a{
   display: block;
 }
@@ -154,8 +171,8 @@ input[type="radio"].visually-hidden {
 .search-icon {
   fill: rgba(255, 255, 255, 0.3);
 }
-/* ==============================Префиксы================================== */
 
+/* ==============================Префиксы================================== */
 .search-input {
   height: 42px;
   width: 221px;
@@ -183,6 +200,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 /* ================================================================ */
+
 .search-button:hover .search-icon {
   fill: rgb(255, 255, 255);
 }
@@ -443,6 +461,7 @@ input[type="radio"].visually-hidden {
   margin-top: 59px;
   margin-bottom: 32px;
 }
+
 .promo-list {
   height: 430px;
   display: flex;
@@ -1297,7 +1316,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* -------------------------header-catalog (top, middle, nav)------------------------- */
-
 .signed-user a {
   font-size: 21px;
   line-height: 1;
@@ -1480,7 +1498,7 @@ input[type="radio"].visually-hidden {
 }
 
 .content-list {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   display: flex;
   flex-wrap: wrap;
   margin-left: -20px
@@ -1977,7 +1995,6 @@ input[type="radio"].visually-hidden {
 .radio-input:checked:disabled + .radio-box + .radio-text {
   color: rgba(0, 0, 0, 0.4);
 }
-
 
 /* -------------------------modal------------------------- */
 .modal-cart-added {
