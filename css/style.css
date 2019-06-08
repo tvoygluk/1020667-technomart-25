@@ -1424,7 +1424,7 @@ input[type="radio"].visually-hidden {
   right: 10px;
 }
 
-/* -------------------------catalog-main------------------------- */
+/* -------------------------catalog-main-breadcrumbs------------------------- */
 .breadcrumbs-list a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1433,6 +1433,32 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.breadcrumbs-list {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.breadcrumbs-list li:not(:last-of-type) {
+  margin-right: 41px;
+  position: relative;
+}
+
+.breadcrumbs-list li:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -25px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px 0 0 0;
+  background-color: white;
+  box-shadow: 1px 1px 0 1px #c1c6ce;
+  transform: rotate(-45deg) scale(0.7);
+}
+
+/* -------------------------catalog-main-content (for index too)------------------------- */
 .catalog-main h1 {
   background-color: #f2f6f8;
   font-size: 30px;
@@ -1452,30 +1478,6 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   line-height: 1.76;
   color: #000000;
-}
-
-.filter-form label {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.33;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-.show-filtered-result {
-  width: 140px;
-  height: 38px;
-  border: solid 1px #e5e5e5;
-  background-color: #ffffff;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 1.38;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: normal;
-  margin-top: 76px;
 }
 
 .content-img {
@@ -1580,29 +1582,29 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
 }
 
-.breadcrumbs-list {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 25px;
-  margin-bottom: 25px;
+/* -------------------------catalog-main-filters------------------------- */
+.filter-form label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.33;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
-.breadcrumbs-list li:not(:last-of-type) {
-  margin-right: 41px;
-  position: relative;
-}
-
-.breadcrumbs-list li:not(:last-of-type)::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  right: -25px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px 0 0 0;
-  background-color: white;
-  box-shadow: 1px 1px 0 1px #c1c6ce;
-  transform: rotate(-45deg) scale(0.7);
+.show-filtered-result {
+  width: 140px;
+  height: 38px;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 76px;
 }
 
 .filters-content-wrapper {
