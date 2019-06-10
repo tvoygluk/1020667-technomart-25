@@ -59,7 +59,12 @@ input[type="radio"].visually-hidden {
 .user-interface-btn-list,
 .products-list,
 .manufacturers-list,
-.services-menu-list {
+.services-menu-list,
+.promo-list,
+.slider,
+.actions,
+.slider-middle,
+.radio-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -493,13 +498,10 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-list {
-  height: 430px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-content: flex-start;
   margin-left: -20px;
+  /* padding: 0; */
 }
 
 .promo-item {
@@ -513,6 +515,36 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   position: relative;
 }
+
+.slider {
+  display: flex;
+  width: 620px;
+  height: 266px;
+  overflow: hidden;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.slider-item {
+  background-color: gray;
+  /* list-style-type: none; */
+  min-width: 100%;
+}
+
+.section-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
 
 .materials {
   background-color: #ffbf47;
@@ -531,7 +563,6 @@ input[type="radio"].visually-hidden {
 }
 
 .delivery {
-  margin-top: -143px;
   background-color: #ffc047;
 }
 
@@ -580,8 +611,6 @@ input[type="radio"].visually-hidden {
   padding-right: 37px;
 }
 
-
-
 .machinery .promo-icon {
   margin: 31px 31px auto auto;
 }
@@ -600,13 +629,6 @@ input[type="radio"].visually-hidden {
 
 .delivery .promo-icon {
   margin: 32px 31px auto auto;
-}
-
-/* TODO: починить слайдер (переделать на flex) */
-.slider a,
-.second-hide-slider a {
-  padding-left: 49px;
-  padding-right: 45px;
 }
 
 .materials h3,
@@ -629,64 +651,69 @@ input[type="radio"].visually-hidden {
   margin: auto auto 22px 25px;
 }
 
-.slider h3,
+/* TODO: починить слайдер (переделать на flex) */
+/* .slider a,
+.second-hide-slider a {
+  padding-left: 49px;
+  padding-right: 45px;
+} */
+
+/* .slider h3,
 .slider b,
 .second-hide-slider h3,
 .second-hide-slider b {
   color: #ffffff;
-}
+} */
 
-.slider h3,
+/* .slider h3,
 .second-hide-slider h3 {
   font-size: 36px;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1;
   margin: 22px 24px 4px;
-}
-.slider b,
+} */
+
+/* .slider b,
 .second-hide-slider b {
   font-size: 18px;
   font-weight: normal;
   line-height: 1.33;
   margin: 4px 24px;
-}
+} */
 
-
-
-.slider {
-  /* display: flex; */
+/* .slider {
   background-color: rgb(187, 160, 4);
   background-image: url("../img/slider-image1.jpg");
   width: 620px;
   height: 266px;
-}
+} */
 
-.slider div ,
+/* .slider div ,
 .second-hide-slider div {
   position: absolute;
-}
+} */
 
-.to-left,
+/* .to-left,
 .to-right {
   width: 22px;
   height: 40px;
   top: 114px;
-}
+} */
 
-.to-left {
+/* .to-left {
   background-image: url("../img/icon-left.svg");
   background-repeat: no-repeat;
   left: 25px;
-}
+} */
 
-.to-right {
+/* .to-right {
   background-image: url("../img/icon-right.svg");
   background-repeat: no-repeat;
   right: 25px;
-}
+} */
 
-.radio-button-like {
+/* .radio-button-like {
   width: 10px;
   height: 10px;
   background-color: #ffffff;
@@ -736,7 +763,7 @@ input[type="radio"].visually-hidden {
   top: 527px;
   z-index: 2;
   display: none;
-}
+} */
 
 /* -------------------------main (index) tipical-block, popular-products-block------------------------- */
 .tipical-block h2 {
