@@ -302,10 +302,10 @@ input[type="radio"].visually-hidden {
 }
 
 .cart-icon {
-  position: absolute;
+  /* position: absolute; */
   width: 15px;
   height: 15px;
-  left: 18px;
+  /* left: 18px; */
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -1501,62 +1501,12 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.user-interface-btn-list {
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 218px;
-  height: 170px;
-  padding: 44px 0;
-  background-color: #ffffff;
-}
-
 .content-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .content-item:hover .user-interface-btn-list {
-  display: block;
-}
-
-.user-interface-btn-list li {
-  margin: 0 auto 7px;
-}
-
-.user-interface-btn-item button {
-  display: block;
-  margin: 0 auto;
-  border-radius: 3px;
-}
-
-.btn-buy:hover {
-  background-color: #5fbb2d;
-}
-
-.btn-buy:active {
-  background-color: #518534;
-}
-
-.btn-add-bookmarks {
-  width: 135px;
-  height: 38px;
-  border: solid 3px #63a63e;
-  font-size: 14px;
-  line-height: 1.29;
-  text-align: center;
-  color: #32425c;
-  z-index: 2;
-}
-
-.btn-add-bookmarks:hover {
-  border: solid 3px #32425c;
-}
-
-.btn-add-bookmarks:active {
-  opacity: 0.3;
-  border: solid 3px #32425c;
-  color: rgba(50, 66, 92, 0.3);
+  display: flex;
 }
 
 .catalog-main h1 {
@@ -1630,15 +1580,10 @@ input[type="radio"].visually-hidden {
 }
 
 .current-price {
-  width: 141px;
   background-color: #ee3643;
-  color: #ffffff;
-}
-
-.current-price {
   position: relative;
   margin: 0 auto 20px;
-  padding: 10px 30px 10px 38px;
+  padding: 10px 37px 10px 38px;
   color: #ffffff;
   border-radius: 3px;
 }
@@ -1653,20 +1598,76 @@ input[type="radio"].visually-hidden {
   border-left-color: #ee3643;
 }
 
-.btn-buy {
-  width: 135px;
-  height: 38px;
-  box-shadow: inset 0px -3px 0 0 #367315;
-  background-color: #63a63e;
+/* ======================= btn-buy + btn-add-bookmarks ======================= */
+.user-interface-btn-list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 218px;
+  height: 170px;
+  background-color: #ffffff;
+}
+
+.user-interface-btn-list li {
+  margin: 0 auto 7px;
+}
+
+.user-interface-btn-list li:first-child {
+  margin-top: 45px;
+}
+
+.user-interface-btn-item button {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-flex;
   font-size: 14px;
   line-height: 1.29;
+  text-transform: uppercase;
+  border-radius: 3px;
   text-align: center;
+  cursor: pointer;
+}
+
+.btn-buy {
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
   color: #ffffff;
-  position: relative;
+  display: flex;
+  border-width: 0px;
+  padding-left: 12px;
+  padding-right: 45px;
+}
+
+.btn-add-bookmarks {
+  border: solid 3px #63a63e;
+  color: #32425c;
+  padding-left: 33px;
+  padding-right: 29px;
+}
+
+.btn-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.btn-buy:active {
+  background-color: #518534;
+}
+
+.btn-add-bookmarks:hover {
+  border: solid 3px #32425c;
+}
+
+.btn-add-bookmarks:active {
+  opacity: 0.3;
+  border: solid 3px #32425c;
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .btn-buy .cart-icon {
-  left: 12px;
+  margin-right: 22px;
 }
 
 .btn-buy:hover .cart-icon {
@@ -1676,6 +1677,7 @@ input[type="radio"].visually-hidden {
 .btn-buy:focus .cart-icon {
   fill: rgba(255, 255, 255, 0.5);
 }
+/* ======================= */
 
 .catalog-main-center {
   display: flex;
@@ -2214,6 +2216,6 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-  /* display: none; */
+  display: none;
 }
 
