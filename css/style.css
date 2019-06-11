@@ -2086,7 +2086,8 @@ input[type="radio"].visually-hidden {
 
 /* --------------------------------------modal-find-us-------------------------------------------- */
 .modal-find-us {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2099,42 +2100,39 @@ input[type="radio"].visually-hidden {
   z-index: 12;
 }
 
-.modal-find-us-top {
-  width: 100%;
-  min-height: 311px;
-  background-color: #ffffff;
-}
-
-.modal-find-us-bottom {
-  width: 100%;
-  min-height: 112px;
-  background-color: #f1f1f1;
-}
-
 .find-us-form {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  margin: 0px 0px 0px 80px;
+  margin: 0px;
   padding: 0px;
   display: flex;
   flex-direction: column;
+}
+
+.form-wrapper-center {
   width: 460px;
-  justify-content: flex-start;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.find-us-top {
+  flex-grow: 1;
+  background-color: #ffffff;
+}
+
+.find-us-bottom {
+  flex-grow: 1;
+  background-color: #f1f1f1;
 }
 
 .name-male {
-  margin-top: 45px;
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .letter {
   margin-top: 5px;
-}
-
-.name-male {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .name,
@@ -2154,18 +2152,7 @@ input[type="radio"].visually-hidden {
   text-align: left;
   color: #000000;
   display: block;
-  margin-bottom: 8px;
-}
-
-.submit-find-us {
-  margin-top: 72px;
-  padding-left: 198px;
-  padding-right: 199px;
-  width: 460px;
-  min-height: 38px;
-  background-color: #ee3643;
-  color: #ffffff;
-  border-radius: 3px;
+  margin-bottom: 9px;
 }
 
 .name input,
@@ -2204,6 +2191,13 @@ input[type="radio"].visually-hidden {
   padding-top: 7px;
   resize: none;
   height: 114px;
+  margin-bottom: 37px;
+}
+
+.submit-find-us {
+  margin: 37px 0px;
+  padding-left: 198px;
+  padding-right: 199px;
 }
 
 .modal-map {
@@ -2220,6 +2214,6 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-  display: none;
+  /* display: none; */
 }
 
