@@ -286,10 +286,13 @@ input[type="radio"].visually-hidden {
 }
 
 .cart-icon {
-  margin-left: 18px;
   width: 15px;
   height: 15px;
   fill: rgba(255, 255, 255, 0.3);
+}
+
+.cart-link .cart-icon {
+  margin-left: 18px;
 }
 
 .checkout-iteraction-link {
