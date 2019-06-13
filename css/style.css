@@ -793,13 +793,15 @@ input[type="radio"].visually-hidden {
 .popular-products-link {
   padding-left: 55px;
   padding-right: 55px;
-  margin-right: 24px;
+  margin: 24.5px 24px 24.5px 0px;
+  /* margin-right: 24px; */
 }
 
 .popular-manufacturers-link {
   padding-left: 69px;
   padding-right: 70px;
-  margin-right: 24px;
+  margin: 24.5px 24px 24.5px 0px;
+  /* margin-right: 24px; */
 }
 
 /* -------------------------main (index) manufacturers-list------------------------- */
@@ -1089,10 +1091,8 @@ input[type="radio"].visually-hidden {
 
 .about-company {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 120px;
 }
 
 .company-contacts-wrapper h2 {
@@ -1123,9 +1123,13 @@ input[type="radio"].visually-hidden {
   padding: 0px;
 }
 
-.about-company-discription span{
+.about-company-discription span {
   display: block;
   margin-bottom: 26px;
+}
+
+.about-company-discription span:first-child {
+  width: 520px;
 }
 
 .discription-transport {
@@ -1203,6 +1207,13 @@ input[type="radio"].visually-hidden {
   margin-bottom: 53px;
 }
 
+.footer-phone {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #f3f7f9;
+  text-decoration: none;
+}
+
 .footer-nav-top a:active {
   color: rgba(241, 245, 247, 0.5);
   text-decoration: none;
@@ -1236,7 +1247,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-nav-bottom {
-  margin-top: auto;
+  margin-top: 32px;
   margin-bottom: 76px;
 }
 
@@ -1579,6 +1590,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   margin-top: 76px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .manufacturers,
@@ -1728,7 +1740,8 @@ input[type="radio"].visually-hidden {
   left: 0px;
   width: 23px;
   height: 23px;
-  background-image: url("../img/checkbox-off-calm.svg");
+  /* background-image: url("../img/checkbox-off-calm.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='23' viewBox='0 0 23 23' width='23' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1v-17c0-.542.458-1 1-1zm0-2h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-17c0-1.65-1.35-3-3-3z' fill='%23c5c5c5'/%3E%3C/svg%3E");
 }
 
 .radio-box {
@@ -1739,39 +1752,47 @@ input[type="radio"].visually-hidden {
   left: 0px;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-off-calm.svg");
+  /* background-image: url("../img/radio-off-calm.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='25' viewBox='0 0 25 25' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m12.5 4c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5zm0-4c-6.903 0-12.5 5.597-12.5 12.5s5.597 12.5 12.5 12.5 12.5-5.597 12.5-12.5-5.597-12.5-12.5-12.5z' fill='%23c5c5c5'/%3E%3C/svg%3E");
 }
 
 /* Checked */
 .check-input:checked + .check-box {
-  background-image: url("../img/checkbox-on-calm.svg");
+  /* background-image: url("../img/checkbox-on-calm.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='23' viewBox='0 0 27 23' width='27' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c5c5c5' fill-rule='nonzero'%3E%3Cpath d='m7.285 7.486-2.829 2.829 7.783 7.783 13.932-13.932-2.828-2.829-11.104 11.102z'/%3E%3Cpath d='m21 20c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1v-17c0-.542.458-1 1-1h16.908l1.585-1.585c-.4519846-.26845822-.9673109-.41170031-1.493-.415h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Focused */
 .check-input:focus + .check-box {
-  background-image: url("../img/checkbox-off-hover.svg");
+  /* background-image: url("../img/checkbox-off-hover.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='23' viewBox='0 0 23 23' width='23' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1v-17c0-.542.458-1 1-1zm0-2h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-17c0-1.65-1.35-3-3-3z' fill='%23b5b5b5'/%3E%3C/svg%3E");
 }
 
 .check-input:checked:focus + .check-box {
-  background-image: url("../img/checkbox-on-hover.svg");
+  /* background-image: url("../img/checkbox-on-hover.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='23' viewBox='0 0 27 23' width='27' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b5b5b5'%3E%3Cpath d='m7.285 7.486-2.829 2.829 7.783 7.783 13.932-13.932-2.828-2.829-11.104 11.102z'/%3E%3Cpath d='m21 20c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1v-17c0-.542.458-1 1-1h16.908l1.585-1.585c-.4519846-.26845822-.9673109-.41170031-1.493-.415h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Hover */
 .check-input:hover + .check-box {
-  background-image: url("../img/checkbox-off-hover.svg");
+  /* background-image: url("../img/checkbox-off-hover.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='23' viewBox='0 0 23 23' width='23' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1v-17c0-.542.458-1 1-1zm0-2h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-17c0-1.65-1.35-3-3-3z' fill='%23b5b5b5'/%3E%3C/svg%3E");
 }
 
 .check-input:checked:hover + .check-box {
-  background-image: url("../img/checkbox-on-hover.svg");
+  /* background-image: url("../img/checkbox-on-hover.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='23' viewBox='0 0 27 23' width='27' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b5b5b5'%3E%3Cpath d='m7.285 7.486-2.829 2.829 7.783 7.783 13.932-13.932-2.828-2.829-11.104 11.102z'/%3E%3Cpath d='m21 20c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1v-17c0-.542.458-1 1-1h16.908l1.585-1.585c-.4519846-.26845822-.9673109-.41170031-1.493-.415h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Disabled */
 .check-input:disabled + .check-box {
-  background-image: url("../img/checkbox-off-disabled.svg");
+  /* background-image: url("../img/checkbox-off-disabled.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='23' viewBox='0 0 23 23' width='23' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1v-17c0-.542.458-1 1-1zm0-2h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-17c0-1.65-1.35-3-3-3z' fill='%23b5b5b5' opacity='.3'/%3E%3C/svg%3E");
 }
 
 .check-input:checked:disabled + .check-box {
-  background-image: url("../img/checkbox-on-disabled.svg");
+  /* background-image: url("../img/checkbox-on-disabled.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='23' viewBox='0 0 27 23' width='27' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b5b5b5' opacity='.3'%3E%3Cpath d='m7.285 7.486-2.829 2.829 7.783 7.783 13.932-13.932-2.828-2.829-11.104 11.102z'/%3E%3Cpath d='m21 20c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1v-17c0-.542.458-1 1-1h16.908l1.585-1.585c-.4519846-.26845822-.9673109-.41170031-1.493-.415h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .check-input:disabled + .check-box + .check-text {
@@ -1784,34 +1805,41 @@ input[type="radio"].visually-hidden {
 
 /* Checked */
 .radio-input:checked + .radio-box {
-  background-image: url("../img/radio-on-calm.svg");
+  /* background-image: url("../img/radio-on-calm.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='25' viewBox='0 0 25 25' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c5c5c5' fill-rule='nonzero'%3E%3Cpath d='m12.5 4c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5zm0-4c-6.903 0-12.5 5.597-12.5 12.5s5.597 12.5 12.5 12.5 12.5-5.597 12.5-12.5-5.597-12.5-12.5-12.5z'/%3E%3Ccircle cx='12.5' cy='12.5' r='4.5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Focused */
 .radio-input:focus + .radio-box {
-  background-image: url("../img/radio-off-hover.svg");
+  /* background-image: url("../img/radio-off-hover.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='25' viewBox='0 0 25 25' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m12.5 4c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5zm0-4c-6.903 0-12.5 5.597-12.5 12.5s5.597 12.5 12.5 12.5 12.5-5.597 12.5-12.5-5.597-12.5-12.5-12.5z' fill='%23b5b5b5'/%3E%3C/svg%3E");
 }
 
 .radio-input:checked:focus + .radio-box {
-  background-image: url("../img/radio-on-hover.svg");
+  /* background-image: url("../img/radio-on-hover.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='25' viewBox='0 0 25 25' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b5b5b5'%3E%3Cpath d='m12.5 4c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5zm0-4c-6.903 0-12.5 5.597-12.5 12.5s5.597 12.5 12.5 12.5 12.5-5.597 12.5-12.5-5.597-12.5-12.5-12.5z'/%3E%3Ccircle cx='12.5' cy='12.5' r='4.5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Hover */
 .radio-input:hover + .radio-box {
-  background-image: url("../img/radio-off-hover.svg");
+  /* background-image: url("../img/radio-off-hover.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='25' viewBox='0 0 25 25' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m12.5 4c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5zm0-4c-6.903 0-12.5 5.597-12.5 12.5s5.597 12.5 12.5 12.5 12.5-5.597 12.5-12.5-5.597-12.5-12.5-12.5z' fill='%23b5b5b5'/%3E%3C/svg%3E");
 }
 
 .radio-input:checked:hover + .radio-box {
-  background-image: url("../img/radio-on-hover.svg");
+  /* background-image: url("../img/radio-on-hover.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='25' viewBox='0 0 25 25' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b5b5b5'%3E%3Cpath d='m12.5 4c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5zm0-4c-6.903 0-12.5 5.597-12.5 12.5s5.597 12.5 12.5 12.5 12.5-5.597 12.5-12.5-5.597-12.5-12.5-12.5z'/%3E%3Ccircle cx='12.5' cy='12.5' r='4.5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Disabled */
 .radio-input:disabled + .radio-box {
-  background-image: url("../img/radio-off-disabled.svg");
+  /* background-image: url("../img/radio-off-disabled.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='25' viewBox='0 0 25 25' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m12.5 4c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5zm0-4c-6.903 0-12.5 5.597-12.5 12.5s5.597 12.5 12.5 12.5 12.5-5.597 12.5-12.5-5.597-12.5-12.5-12.5z' fill='%23b5b5b5' opacity='.3'/%3E%3C/svg%3E");
 }
 
 .radio-input:checked:disabled + .radio-box {
-  background-image: url("../img/radio-on-disabled.svg");
+  /* background-image: url("../img/radio-on-disabled.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg height='25' viewBox='0 0 25 25' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b5b5b5' opacity='.3'%3E%3Cpath d='m12.5 4c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5-8.5-3.813-8.5-8.5 3.813-8.5 8.5-8.5zm0-4c-6.903 0-12.5 5.597-12.5 12.5s5.597 12.5 12.5 12.5 12.5-5.597 12.5-12.5-5.597-12.5-12.5-12.5z'/%3E%3Ccircle cx='12.5' cy='12.5' r='4.5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .radio-input:disabled + .radio-box + .radio-text {
@@ -2047,7 +2075,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-interface-btn-list li {
-  margin: 0 auto 7px;
+  margin: 0px 41.34px 7px 41.34px;
 }
 
 .user-interface-btn-list li:first-child {
@@ -2055,7 +2083,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-interface-btn-item button {
-  display: flex;
+  /* display: flex; */
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline-flex;
@@ -2078,6 +2106,7 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-add-bookmarks {
+  background-color: #ffffff;
   border: solid 3px #63a63e;
   color: #32425c;
   padding-left: 33px;
