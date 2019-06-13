@@ -497,9 +497,16 @@ input[type="radio"].visually-hidden {
   margin-bottom: 60px;
 }
 
+/* -------------------------main index------------------------- */
+.index-main {
+  padding-top: 59px;
+  padding-bottom: 86px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
 /* -------------------------main index promo------------------------- */
 .promo {
-  margin-top: 59px;
   margin-bottom: 32px;
 }
 
@@ -1076,7 +1083,6 @@ input[type="radio"].visually-hidden {
 .company-contacts-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 86px;
 }
 
 .about-company {
@@ -1454,6 +1460,12 @@ input[type="radio"].visually-hidden {
   margin: 14px 10px 14px 14px;
 }
 
+/* ----------------------------- catalog-main ----------------------------- */
+.catalog-main {
+  width: 100%;
+  background-color: #ffffff;
+}
+
 /* -------------------------catalog-main-breadcrumbs------------------------- */
 .breadcrumbs-list a {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1470,12 +1482,12 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
 }
 
-.breadcrumbs-list li:not(:last-of-type) {
+.breadcrumbs-list div:not(:last-of-type) {
   margin-right: 41px;
   position: relative;
 }
 
-.breadcrumbs-list li:not(:last-of-type)::after {
+.breadcrumbs-list div:not(:last-of-type)::after {
   content: "";
   position: absolute;
   top: 4px;
