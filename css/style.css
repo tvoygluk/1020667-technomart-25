@@ -1468,6 +1468,12 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.catalog-main-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .catalog-main h1 {
   background-color: #f2f6f8;
   font-size: 30px;
@@ -1658,7 +1664,6 @@ input[type="radio"].visually-hidden {
   top: 11px;
   right: -22px;
 }
-
 
 .filter-button:first-of-type {
   width: 20px;
@@ -2029,7 +2034,7 @@ input[type="radio"].visually-hidden {
   border-left-color: #ee3643;
 }
 
-/* ======================= btn-buy + btn-add-bookmarks ======================= */
+/* ======================= catalog-main   btn-buy + btn-add-bookmarks ======================= */
 .user-interface-btn-list {
   display: none;
   flex-direction: column;
@@ -2110,12 +2115,78 @@ input[type="radio"].visually-hidden {
 }
 /* ======================= */
 
-.catalog-main-center {
+/* ---------------------------------- catalog-main   paginator ---------------------------------- */
+.paginator {
+  margin: 32px 0px 60px -10px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
+.paginator a {
+  margin-left: 10px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  padding: 9px 0px 10px 0px;
+  border: solid 1px #e5e5e5;
+  border-radius: 3px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.paginator a:not(:last-child) {
+  padding-left: 14.5px;
+  padding-right: 14.5px;
+}
+
+.paginator a:last-child {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.paginator a:hover {
+  border-color: #bdc6ca;
+}
+
+.paginator a:active {
+  border-color: #ee3643;
+}
+
+.paginator a.current-page {
+  color: #ffffff;
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+/* ------------------------------ catalog-main   perforator-description ------------------------------ */
+.perforator-description {
+  width: 100%;
+  background-color: #f4f7f9;
+}
+
+.perforator-description-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.perforator-description h2 {
+  margin: 68px 0px 25px;
+  padding: 0px;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.perforator-description p {
+  width: 100%;
+  margin: 0px 0px 67px 0px;
+  padding: 0px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #000000;
+}
 
 /* -------------------------modal catalog-(modal-cart-added)------------------------- */
 .modal-cart-added {
