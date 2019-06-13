@@ -201,11 +201,23 @@ input[type="radio"].visually-hidden {
 }
 
 /* ++++++++++++++++++++++++++ Префиксы ++++++++++++++++++++++++++ */
-.search-input::-webkit-input-placeholder {
+/* .search-input::-webkit-placeholder {
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
 }
+
+.search-input:-moz-placeholder {
+  font-size: 17px;
+  line-height: 1.06;
+  color: #ffffff;
+}
+
+.search-input[type="search"]::-moz-placeholder {
+  font-size: 17px;
+  line-height: 1.06;
+  color: rgb(0, 255, 136);
+} */
 
 .search-input:-ms-input-placeholder {
   font-size: 17px;
@@ -213,9 +225,13 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.search-input[placeholder="Поиск:"]::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
 .search-input::placeholder {
   font-size: 17px;
-  line-height: 1.06;
   color: #ffffff;
 }
 /* ++++++++++++++++++++++++++ */
