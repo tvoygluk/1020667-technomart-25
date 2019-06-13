@@ -262,7 +262,7 @@
               <h2 class="sorting-title">Сортировка:</h2>
               <ul class="sorting-type-list">
                 <li>
-                  <button class="price-sort">
+                  <button class="price-sort active-sort">
                     ПО ЦЕНЕ
                   </button>
                 </li>
@@ -279,13 +279,17 @@
               </ul>
               <ul class="ascending-descending-list">
                 <li>
-                  <button class="ascending">
-                    >
+                  <button class="ascending active-sort" aria-label="Сортировать товар по возрастанию выбранного параметра">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path d="M5.5 0L0 10h11z"/>
+                      </svg>
                   </button>
                 </li>
                 <li>
-                  <button class="descending">
-                    <
+                  <button class="descending" aria-label="Сортировать товар по убыванию выбранного параметра">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path d="M5.5 10L0 0h11"/>
+                      </svg>
                   </button>
                 </li>
               </ul>

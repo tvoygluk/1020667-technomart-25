@@ -1847,47 +1847,66 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.sorting button {
-  margin: 0px;
-  padding: 0px;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.38;
-  text-transform: uppercase;
-  color: #000000;
-  border-width: 0px;
-  background-color: inherit;
-  text-align: center;
-  cursor: pointer;
-  border-bottom: 1px dotted #ee3643;
-}
-
-/* .super-button {
-  padding: 10px 0px;
-  margin: auto 0px;
-
-  display: inline-flex;
-
-  font-size: 14px;
-  line-height: 1.29;
-  text-transform: uppercase;
-  border-radius: 3px;
-
-  color: #ffffff;
-
-} */
-
 .sorting-type-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-left: 139px;
+}
+
+.sorting-type-list li:nth-child(1) {
+  margin-right: 71px;
+}
+
+.sorting-type-list li:nth-child(2) {
+  margin-right: 65px;
 }
 
 .ascending-descending-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-left: 46px;
+}
+
+.ascending-descending-list li:nth-child(1) {
+  margin-right: 21px;
+}
+
+.sorting button {
+  margin: 10px 0px 9px 0px;
+  padding: 0px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  text-transform: uppercase;
+  border-width: 0px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.sorting-type-list button {
+  color: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-type-list button:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.ascending-descending-list button {
+  fill: #c5c5c5;
+}
+
+.ascending-descending-list button:hover {
+  fill: #000000;
+}
+
+.sorting button.active-sort {
+  color: #ee3643;
+  border-width: 0px;
+  fill: #ee3643;
 }
 
 /* -------------------------catalog-main-content (for index too)------------------------- */
