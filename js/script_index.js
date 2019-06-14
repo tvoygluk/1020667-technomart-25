@@ -1,6 +1,6 @@
-var buttonOpenModalWindowFindUs = document.querySelector(".find-us-btn");
+var openModalWindowFindUs = document.querySelector(".find-us-btn");
 var modalWindowFindUs = document.querySelector(".modal-find-us");
-var buttonCloseModalWindow = document.querySelector(".modal-close");
+var closeModalWindowFindUs = modalWindowFindUs.querySelector(".modal-close");
 var modalWindowFindUsForm = modalWindowFindUs.querySelector(".find-us-form");
 var modalWindowFindUsNameField = modalWindowFindUs.querySelector("[name=find-us-name]");
 var modalWindowFindUsEmaleField = modalWindowFindUs.querySelector("[name=find-us-male]");
@@ -19,7 +19,7 @@ catch (err)
   isStorageSupport = false;
 }
 
-buttonOpenModalWindowFindUs.addEventListener("click", function (evt)
+openModalWindowFindUs.addEventListener("click", function (evt)
 {
   evt.preventDefault();
   modalWindowFindUs.classList.add("make-modal-visible");
@@ -41,7 +41,9 @@ modalWindowFindUsForm.addEventListener("submit", function (evt)
   if (!modalWindowFindUsNameField.value || !modalWindowFindUsEmaleField.value || !modalWindowFindUsLetterField.value)
   {
     evt.preventDefault();
-    console.log("empty field!");
+    modalWindowFindUs.classList.remove("modal-error");
+    modalWindowFindUs.offsetWidth = modalWindowFindUs.offsetWidth;
+    modalWindowFindUs.classList.add("modal-error");
   }
   else
   {
@@ -53,10 +55,11 @@ modalWindowFindUsForm.addEventListener("submit", function (evt)
   }
 });
 
-buttonCloseModalWindow.addEventListener("click", function (evt)
+closeModalWindowFindUs.addEventListener("click", function (evt)
 {
   evt.preventDefault();
   modalWindowFindUs.classList.remove("make-modal-visible");
+  modalWindowFindUs.classList.remove("modal-error");
 });
 
 window.addEventListener("keydown", function(evt)
@@ -67,8 +70,36 @@ window.addEventListener("keydown", function(evt)
     {
       evt.preventDefault();
       modalWindowFindUs.classList.remove("make-modal-visible");
+      modalWindowFindUs.classList.remove("modal-error");
     }
   }
 });
 
+var openModalWindowMap = document.querySelector(".map-google-link");
+var modalWindowMap = document.querySelector(".modal-map");
+var closeModalWindowMap = modalWindowMap.querySelector(".modal-close");
+
+openModalWindowMap.addEventListener("click", function (evt)
+{
+  evt.preventDefault();
+  modalWindowMap.classList.add("make-modal-visible");
+});
+
+closeModalWindowMap.addEventListener("click", function (evt)
+{
+  evt.preventDefault();
+  modalWindowMap.classList.remove("make-modal-visible");
+});
+
+window.addEventListener("keydown", function(evt)
+{
+  if (evt.keyCode === 27)
+  {
+    if (modalWindowMap.classList.contains("make-modal-visible"))
+    {
+      evt.preventDefault();
+      modalWindowMap.classList.remove("make-modal-visible");
+    }
+  }
+});
 
