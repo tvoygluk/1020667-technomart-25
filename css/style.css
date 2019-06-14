@@ -2326,7 +2326,7 @@ input[type="radio"].visually-hidden {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -115px;
+  margin-top: -215px;
   margin-left: -310px;
   width: 620px;
   height: 430px;
@@ -2371,7 +2371,7 @@ input[type="radio"].visually-hidden {
 }
 
 .name,
-.password,
+.emale,
 .letter {
   display: flex;
   flex-wrap: wrap;
@@ -2380,7 +2380,7 @@ input[type="radio"].visually-hidden {
 }
 
 .your-name,
-.your-password,
+.your-emale,
 .your-letter {
   font-size: 18px;
   line-height: 1;
@@ -2391,13 +2391,13 @@ input[type="radio"].visually-hidden {
 }
 
 .name input,
-.password input{
+.emale input{
   width: 220px;
   height: 38px;
 }
 
 .name input,
-.password input,
+.emale input,
 .letter textarea {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -2410,13 +2410,13 @@ input[type="radio"].visually-hidden {
 }
 
 .name input:hover,
-.password input:hover,
+.emale input:hover,
 .letter textarea:hover {
   border-color: #b5b5b5;
 }
 
 .name input:focus,
-.password input:focus,
+.emale input:focus,
 .letter textarea:focus {
   outline-color: #ee3643;
   border-color: #ee3643;
@@ -2450,5 +2450,9 @@ input[type="radio"].visually-hidden {
 
 .modal {
   display: none;
+}
+
+.make-modal-visible {
+  display: block;
 }
 
