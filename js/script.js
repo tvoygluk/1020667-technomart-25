@@ -29,8 +29,8 @@ try
 
   openModalWindowFindUs.addEventListener("click", function (evt)
   {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
     modalWindowFindUs.classList.add("make-modal-visible");
@@ -52,8 +52,8 @@ try
     if (!modalWindowFindUsNameField.value || !modalWindowFindUsEmaleField.value || !modalWindowFindUsLetterField.value)
     {
 
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
       modalWindowFindUs.classList.remove("modal-error");
@@ -72,8 +72,8 @@ try
 
   closeModalWindowFindUs.addEventListener("click", function (evt)
   {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
     modalWindowFindUs.classList.remove("make-modal-visible");
@@ -86,8 +86,8 @@ try
     {
       if (modalWindowFindUs.classList.contains("make-modal-visible"))
       {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
         modalWindowFindUs.classList.remove("make-modal-visible");
@@ -102,8 +102,8 @@ try
 
   openModalWindowMap.addEventListener("click", function (evt)
   {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
     modalWindowMap.classList.add("make-modal-visible");
@@ -111,8 +111,8 @@ try
 
   closeModalWindowMap.addEventListener("click", function (evt)
   {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
     modalWindowMap.classList.remove("make-modal-visible");
@@ -124,8 +124,8 @@ try
     {
       if (modalWindowMap.classList.contains("make-modal-visible"))
       {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
         modalWindowMap.classList.remove("make-modal-visible");
@@ -148,8 +148,8 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
   button = openModalWindowCartAdded[index];
   button.addEventListener('click', function (evt)
   {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
       modalWindowCartAdded.classList.add("make-modal-visible-flex");
@@ -158,8 +158,8 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
 
 closeModalWindowCartAdded.addEventListener("click", function (evt)
 {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
@@ -167,8 +167,8 @@ closeModalWindowCartAdded.addEventListener("click", function (evt)
 
 anotherCloseModalWindowCartAdded.addEventListener("click", function (evt)
 {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
@@ -180,8 +180,8 @@ window.addEventListener("keydown", function(evt)
   {
     if (modalWindowCartAdded.classList.contains("make-modal-visible-flex"))
     {
-
-  event.defaultPrevented; // true
+evt.preventDefault();
+  evt.defaultPrevented; // true
 
 
       modalWindowCartAdded.classList.remove("make-modal-visible-flex");
