@@ -1,3 +1,14 @@
+function ie8SafePreventEvent(e) {
+  if (e.preventDefault) {
+      e.preventDefault()
+  } else {
+      e.stop()
+  };
+
+  e.returnValue = false;
+  e.stopPropagation();
+}
+
 try
 {
   var openModalWindowFindUs = document.querySelector(".find-us-btn");
@@ -23,14 +34,7 @@ try
 
   openModalWindowFindUs.addEventListener("click", function (evt)
   {
-    if (evt.preventDefault)
-    {
-      evt.preventDefault();
-    }
-    else
-    {
-      evt.returnValue = false;
-    }
+    ie8SafePreventEvent(evt);
 
     modalWindowFindUs.classList.add("make-modal-visible");
 
@@ -51,14 +55,7 @@ try
     if (!modalWindowFindUsNameField.value || !modalWindowFindUsEmaleField.value || !modalWindowFindUsLetterField.value)
     {
 
-      if (evt.preventDefault)
-      {
-        evt.preventDefault();
-      }
-      else
-      {
-        evt.returnValue = false;
-      }
+      ie8SafePreventEvent(evt);
 
       modalWindowFindUs.classList.remove("modal-error");
       modalWindowFindUs.offsetWidth = modalWindowFindUs.offsetWidth;
@@ -76,14 +73,7 @@ try
 
   closeModalWindowFindUs.addEventListener("click", function (evt)
   {
-    if (evt.preventDefault)
-    {
-      evt.preventDefault();
-    }
-    else
-    {
-      evt.returnValue = false;
-    }
+    ie8SafePreventEvent(evt);
 
     modalWindowFindUs.classList.remove("make-modal-visible");
     modalWindowFindUs.classList.remove("modal-error");
@@ -95,14 +85,7 @@ try
     {
       if (modalWindowFindUs.classList.contains("make-modal-visible"))
       {
-        if (evt.preventDefault)
-        {
-          evt.preventDefault();
-        }
-        else
-        {
-          evt.returnValue = false;
-        }
+        ie8SafePreventEvent(evt);
 
         modalWindowFindUs.classList.remove("make-modal-visible");
         modalWindowFindUs.classList.remove("modal-error");
@@ -116,28 +99,14 @@ try
 
   openModalWindowMap.addEventListener("click", function (evt)
   {
-    if (evt.preventDefault)
-    {
-      evt.preventDefault();
-    }
-    else
-    {
-      evt.returnValue = false;
-    }
+    ie8SafePreventEvent(evt);
 
     modalWindowMap.classList.add("make-modal-visible");
   });
 
   closeModalWindowMap.addEventListener("click", function (evt)
   {
-    if (evt.preventDefault)
-    {
-      evt.preventDefault();
-    }
-    else
-    {
-      evt.returnValue = false;
-    }
+    ie8SafePreventEvent(evt);
 
     modalWindowMap.classList.remove("make-modal-visible");
   });
@@ -148,14 +117,7 @@ try
     {
       if (modalWindowMap.classList.contains("make-modal-visible"))
       {
-        if (evt.preventDefault)
-        {
-          evt.preventDefault();
-        }
-        else
-        {
-          evt.returnValue = false;
-        }
+        ie8SafePreventEvent(evt);
 
         modalWindowMap.classList.remove("make-modal-visible");
       }
@@ -177,14 +139,7 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
   button = openModalWindowCartAdded[index];
   button.addEventListener('click', function (evt)
   {
-      if (evt.preventDefault)
-      {
-        evt.preventDefault();
-      }
-      else
-      {
-        evt.returnValue = false;
-      }
+      ie8SafePreventEvent(evt);
 
       modalWindowCartAdded.classList.add("make-modal-visible-flex");
   });
@@ -192,28 +147,14 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
 
 closeModalWindowCartAdded.addEventListener("click", function (evt)
 {
-  if (evt.preventDefault)
-  {
-    evt.preventDefault();
-  }
-  else
-  {
-    evt.returnValue = false;
-  }
+  ie8SafePreventEvent(evt);
 
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
 });
 
 anotherCloseModalWindowCartAdded.addEventListener("click", function (evt)
 {
-  if (evt.preventDefault)
-  {
-    evt.preventDefault();
-  }
-  else
-  {
-    evt.returnValue = false;
-  }
+  ie8SafePreventEvent(evt);
 
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
 });
@@ -224,14 +165,7 @@ window.addEventListener("keydown", function(evt)
   {
     if (modalWindowCartAdded.classList.contains("make-modal-visible-flex"))
     {
-      if (evt.preventDefault)
-      {
-        evt.preventDefault();
-      }
-      else
-      {
-        evt.returnValue = false;
-      }
+      ie8SafePreventEvent(evt);
 
       modalWindowCartAdded.classList.remove("make-modal-visible-flex");
     }
