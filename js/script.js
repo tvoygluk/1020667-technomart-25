@@ -23,7 +23,15 @@ try
 
   openModalWindowFindUs.addEventListener("click", function (evt)
   {
-    event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+    if (event.preventDefault)
+    {
+      event.preventDefault();
+    }
+    else
+    {
+      event.returnValue = false;
+    }
+    
     modalWindowFindUs.classList.add("make-modal-visible");
 
     if (storageFindUsName && storageFindUsEmale)
@@ -42,7 +50,16 @@ try
   {
     if (!modalWindowFindUsNameField.value || !modalWindowFindUsEmaleField.value || !modalWindowFindUsLetterField.value)
     {
-      event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+      if (event.preventDefault)
+      {
+        event.preventDefault();
+      }
+      else
+      {
+        event.returnValue = false;
+      }
+      
       modalWindowFindUs.classList.remove("modal-error");
       modalWindowFindUs.offsetWidth = modalWindowFindUs.offsetWidth;
       modalWindowFindUs.classList.add("modal-error");
@@ -59,7 +76,15 @@ try
 
   closeModalWindowFindUs.addEventListener("click", function (evt)
   {
-    event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+    if (event.preventDefault)
+    {
+      event.preventDefault();
+    }
+    else
+    {
+      event.returnValue = false;
+    }
+    
     modalWindowFindUs.classList.remove("make-modal-visible");
     modalWindowFindUs.classList.remove("modal-error");
   });
@@ -70,7 +95,16 @@ try
     {
       if (modalWindowFindUs.classList.contains("make-modal-visible"))
       {
-        event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+        if (event.preventDefault)
+        {
+          event.preventDefault();
+        }
+        else
+        {
+          event.returnValue = false;
+        }
+        
         modalWindowFindUs.classList.remove("make-modal-visible");
         modalWindowFindUs.classList.remove("modal-error");
       }
@@ -83,13 +117,29 @@ try
 
   openModalWindowMap.addEventListener("click", function (evt)
   {
-    event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+    if (event.preventDefault)
+    {
+      event.preventDefault();
+    }
+    else
+    {
+      event.returnValue = false;
+    }
+    
     modalWindowMap.classList.add("make-modal-visible");
   });
 
   closeModalWindowMap.addEventListener("click", function (evt)
   {
-    event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+    if (event.preventDefault)
+    {
+      event.preventDefault();
+    }
+    else
+    {
+      event.returnValue = false;
+    }
+    
     modalWindowMap.classList.remove("make-modal-visible");
   });
 
@@ -99,7 +149,16 @@ try
     {
       if (modalWindowMap.classList.contains("make-modal-visible"))
       {
-        event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+        if (event.preventDefault)
+        {
+          event.preventDefault();
+        }
+        else
+        {
+          event.returnValue = false;
+        }
+        
         modalWindowMap.classList.remove("make-modal-visible");
       }
     }
@@ -120,20 +179,45 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
   button = openModalWindowCartAdded[index];
   button.addEventListener('click', function (evt)
   {
-      event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+      if (event.preventDefault)
+      {
+        event.preventDefault();
+      }
+      else
+      {
+        event.returnValue = false;
+      }
+      
       modalWindowCartAdded.classList.add("make-modal-visible-flex");
   });
 }
 
 closeModalWindowCartAdded.addEventListener("click", function (evt)
-{
-  event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+  if (event.preventDefault)
+  {
+    event.preventDefault();
+  }
+  else
+  {
+    event.returnValue = false;
+  }
+  
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
 });
 
 anotherCloseModalWindowCartAdded.addEventListener("click", function (evt)
-{
-  event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+  if (event.preventDefault)
+  {
+    event.preventDefault();
+  }
+  else
+  {
+    event.returnValue = false;
+  }
+  
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
 });
 
@@ -143,7 +227,16 @@ window.addEventListener("keydown", function(evt)
   {
     if (modalWindowCartAdded.classList.contains("make-modal-visible-flex"))
     {
-      event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+      if (event.preventDefault)
+      {
+        event.preventDefault();
+      }
+      else
+      {
+        event.returnValue = false;
+      }
+      
       modalWindowCartAdded.classList.remove("make-modal-visible-flex");
     }
   }
