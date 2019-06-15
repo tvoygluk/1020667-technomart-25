@@ -2066,8 +2066,8 @@ input[type="radio"].visually-hidden {
   margin-top: 45px;
 }
 
-.user-interface-btn-item button {
-  /* display: flex; */
+.user-interface-btn-item button,
+.user-interface-btn-item a {
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline-flex;
@@ -2182,7 +2182,7 @@ input[type="radio"].visually-hidden {
 }
 
 .perforator-description h2 {
-  margin: 68px 0px 25px;
+  margin: 68px 0px 25px 0px;
   padding: 0px;
   font-size: 30px;
   font-weight: normal;
