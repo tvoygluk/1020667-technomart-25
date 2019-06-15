@@ -1,16 +1,11 @@
-function ie8SafePreventEvent(e) {
-  if (e.preventDefault) {
-      e.preventDefault()
-  } else {
-      e.stop()
-  };
-
-  e.returnValue = false;
-  e.stopPropagation();
-}
-
 try
 {
+  var evt = document.createEvent('CustomEvent');
+  evt.initCustomEvent('custom', true, true, {});
+  evt.preventDefault = function () {
+      Object.defineProperty(this, "defaultPrevented", {get: function () {return true;}});
+  };
+
   var openModalWindowFindUs = document.querySelector(".find-us-btn");
   var modalWindowFindUs = document.querySelector(".modal-find-us");
   var closeModalWindowFindUs = modalWindowFindUs.querySelector(".modal-close-find-us");
@@ -34,7 +29,9 @@ try
 
   openModalWindowFindUs.addEventListener("click", function (evt)
   {
-    ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
     modalWindowFindUs.classList.add("make-modal-visible");
 
@@ -55,7 +52,9 @@ try
     if (!modalWindowFindUsNameField.value || !modalWindowFindUsEmaleField.value || !modalWindowFindUsLetterField.value)
     {
 
-      ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
       modalWindowFindUs.classList.remove("modal-error");
       modalWindowFindUs.offsetWidth = modalWindowFindUs.offsetWidth;
@@ -73,7 +72,9 @@ try
 
   closeModalWindowFindUs.addEventListener("click", function (evt)
   {
-    ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
     modalWindowFindUs.classList.remove("make-modal-visible");
     modalWindowFindUs.classList.remove("modal-error");
@@ -85,7 +86,9 @@ try
     {
       if (modalWindowFindUs.classList.contains("make-modal-visible"))
       {
-        ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
         modalWindowFindUs.classList.remove("make-modal-visible");
         modalWindowFindUs.classList.remove("modal-error");
@@ -99,14 +102,18 @@ try
 
   openModalWindowMap.addEventListener("click", function (evt)
   {
-    ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
     modalWindowMap.classList.add("make-modal-visible");
   });
 
   closeModalWindowMap.addEventListener("click", function (evt)
   {
-    ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
     modalWindowMap.classList.remove("make-modal-visible");
   });
@@ -117,7 +124,9 @@ try
     {
       if (modalWindowMap.classList.contains("make-modal-visible"))
       {
-        ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
         modalWindowMap.classList.remove("make-modal-visible");
       }
@@ -139,7 +148,9 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
   button = openModalWindowCartAdded[index];
   button.addEventListener('click', function (evt)
   {
-      ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
       modalWindowCartAdded.classList.add("make-modal-visible-flex");
   });
@@ -147,14 +158,18 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
 
 closeModalWindowCartAdded.addEventListener("click", function (evt)
 {
-  ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
 });
 
 anotherCloseModalWindowCartAdded.addEventListener("click", function (evt)
 {
-  ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
 });
@@ -165,7 +180,9 @@ window.addEventListener("keydown", function(evt)
   {
     if (modalWindowCartAdded.classList.contains("make-modal-visible-flex"))
     {
-      ie8SafePreventEvent(evt);
+
+  event.defaultPrevented; // true
+
 
       modalWindowCartAdded.classList.remove("make-modal-visible-flex");
     }
