@@ -1,10 +1,10 @@
-function pde(e)//Function to prevent Default Events
-{
-    if(e.preventDefault)
-        e.preventDefault();
-    else
-        e.returnValue = false;
-}
+// function pde(e)//Function to prevent Default Events
+// {
+//     if(e.preventDefault)
+//         e.preventDefault();
+//     else
+//         e.returnValue = false;
+// }
 
 try
 {
@@ -37,7 +37,8 @@ try
 
   openModalWindowFindUs.addEventListener("click", function (evt)
   {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -62,7 +63,8 @@ pde(evt);
     if (!modalWindowFindUsNameField.value || !modalWindowFindUsEmaleField.value || !modalWindowFindUsLetterField.value)
     {
 
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -82,7 +84,8 @@ pde(evt);
 
   closeModalWindowFindUs.addEventListener("click", function (evt)
   {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -96,7 +99,8 @@ pde(evt);
     {
       if (modalWindowFindUs.classList.contains("make-modal-visible"))
       {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -112,7 +116,8 @@ pde(evt);
 
   openModalWindowMap.addEventListener("click", function (evt)
   {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -121,7 +126,8 @@ pde(evt);
 
   closeModalWindowMap.addEventListener("click", function (evt)
   {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -134,7 +140,8 @@ pde(evt);
     {
       if (modalWindowMap.classList.contains("make-modal-visible"))
       {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -158,7 +165,8 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
   button = openModalWindowCartAdded[index];
   button.addEventListener('click', function (evt)
   {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -168,7 +176,8 @@ pde(evt);
 
 closeModalWindowCartAdded.addEventListener("click", function (evt)
 {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -177,7 +186,8 @@ pde(evt);
 
 anotherCloseModalWindowCartAdded.addEventListener("click", function (evt)
 {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
@@ -190,7 +200,8 @@ window.addEventListener("keydown", function(evt)
   {
     if (modalWindowCartAdded.classList.contains("make-modal-visible-flex"))
     {
-pde(evt);
+// pde(evt);
+evt.returnValue = false;
 
 
 
