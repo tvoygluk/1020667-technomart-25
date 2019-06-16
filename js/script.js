@@ -1,19 +1,5 @@
-// function pde(e)//Function to prevent Default Events
-// {
-//     if(e.preventDefault)
-//         e.preventDefault();
-//     else
-//         e.returnValue = false;
-// }
-
 try
 {
-  // var evt = document.createEvent('CustomEvent');
-  // evt.initCustomEvent('custom', true, true, {});
-  // evt.preventDefault = function () {
-  //     Object.defineProperty(this, "defaultPrevented", {get: function () {return true;}});
-  // };
-
   var openModalWindowFindUs = document.querySelector(".find-us-btn");
   var modalWindowFindUs = document.querySelector(".modal-find-us");
   var closeModalWindowFindUs = modalWindowFindUs.querySelector(".modal-close-find-us");
@@ -37,13 +23,7 @@ try
 
   openModalWindowFindUs.addEventListener("click", function (evt)
   {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
-
-
+    evt.preventDefault();
     modalWindowFindUs.classList.add("make-modal-visible");
 
     if (storageFindUsName && storageFindUsEmale)
@@ -62,12 +42,7 @@ evt.preventDefault();
   {
     if (!modalWindowFindUsNameField.value || !modalWindowFindUsEmaleField.value || !modalWindowFindUsLetterField.value)
     {
-
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+      evt.preventDefault();
       modalWindowFindUs.classList.remove("modal-error");
       modalWindowFindUs.offsetWidth = modalWindowFindUs.offsetWidth;
       modalWindowFindUs.classList.add("modal-error");
@@ -84,11 +59,7 @@ evt.preventDefault();
 
   closeModalWindowFindUs.addEventListener("click", function (evt)
   {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+    evt.preventDefault();
     modalWindowFindUs.classList.remove("make-modal-visible");
     modalWindowFindUs.classList.remove("modal-error");
   });
@@ -99,11 +70,7 @@ evt.preventDefault();
     {
       if (modalWindowFindUs.classList.contains("make-modal-visible"))
       {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+        evt.preventDefault();
         modalWindowFindUs.classList.remove("make-modal-visible");
         modalWindowFindUs.classList.remove("modal-error");
       }
@@ -116,21 +83,13 @@ evt.preventDefault();
 
   openModalWindowMap.addEventListener("click", function (evt)
   {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+    evt.preventDefault();
     modalWindowMap.classList.add("make-modal-visible");
   });
 
   closeModalWindowMap.addEventListener("click", function (evt)
   {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+    evt.preventDefault();
     modalWindowMap.classList.remove("make-modal-visible");
   });
 
@@ -140,11 +99,7 @@ evt.preventDefault();
     {
       if (modalWindowMap.classList.contains("make-modal-visible"))
       {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+        evt.preventDefault();
         modalWindowMap.classList.remove("make-modal-visible");
       }
     }
@@ -165,32 +120,20 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
   button = openModalWindowCartAdded[index];
   button.addEventListener('click', function (evt)
   {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+      evt.preventDefault();
       modalWindowCartAdded.classList.add("make-modal-visible-flex");
   });
 }
 
 closeModalWindowCartAdded.addEventListener("click", function (evt)
 {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+  evt.preventDefault();
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
 });
 
 anotherCloseModalWindowCartAdded.addEventListener("click", function (evt)
 {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+  evt.preventDefault();
   modalWindowCartAdded.classList.remove("make-modal-visible-flex");
 });
 
@@ -200,11 +143,7 @@ window.addEventListener("keydown", function(evt)
   {
     if (modalWindowCartAdded.classList.contains("make-modal-visible-flex"))
     {
-// pde(evt);
-// evt.returnValue = false;
-evt.preventDefault();
-
-
+      evt.preventDefault();
       modalWindowCartAdded.classList.remove("make-modal-visible-flex");
     }
   }
