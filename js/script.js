@@ -115,6 +115,8 @@ var closeModalWindowCartAdded = modalWindowCartAdded.querySelector(".modal-close
 var anotherCloseModalWindowCartAdded = modalWindowCartAdded.querySelector(".continue-shopping");
 var openModalWindowCartAdded = document.querySelectorAll(".btn-buy"), index, button;
 
+var headerCart = document.querySelector(".cart-link");
+
 for (index = 0; index < openModalWindowCartAdded.length; index++)
 {
   button = openModalWindowCartAdded[index];
@@ -122,6 +124,7 @@ for (index = 0; index < openModalWindowCartAdded.length; index++)
   {
       evt.preventDefault();
       modalWindowCartAdded.classList.add("make-modal-visible-flex");
+      headerCart.classList.add("added-content-item");
   });
 }
 
@@ -148,3 +151,16 @@ window.addEventListener("keydown", function(evt)
     }
   }
 });
+
+var headerBookmark = document.querySelector(".bookmark-link");
+var makeNewBookmark = document.querySelectorAll(".btn-add-bookmarks"), index, button;
+
+for (index = 0; index < makeNewBookmark.length; index++)
+{
+  button = makeNewBookmark[index];
+  button.addEventListener('click', function (evt)
+  {
+      evt.preventDefault();
+      headerBookmark.classList.add("added-content-item");
+  });
+}
