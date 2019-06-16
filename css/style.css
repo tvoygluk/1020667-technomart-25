@@ -355,7 +355,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 }
 
 .header-middle-area h1 {
@@ -388,7 +388,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   flex-shrink: 0;
   height: 19px;
-  margin: 9px 40px 11px 15px;
+  margin: 9px 37px 11px 15px;
   width: 19px;
 }
 
@@ -607,7 +607,7 @@ input[type="radio"].visually-hidden {
 .to-right {
   background-image: url("../img/icon-right.svg");
   background-repeat: no-repeat;
-  margin-right: 25px;
+  margin-right: 21px;
 }
 
 .slider-bottom {
@@ -694,7 +694,7 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
-  margin: 26px auto auto 23px;
+  margin: 21px auto auto 23px;
 }
 
 .materials a,
@@ -911,7 +911,7 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   font-weight: normal;
   line-height: 1;
-  margin-top: 68px;
+  margin-top: 65px;
   text-transform: uppercase;
 }
 
@@ -964,7 +964,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   line-height: 1.43;
   overflow: hidden;
-  padding: 15px 0px 15px 22px;
+  padding: 15px 0px 17px 22px;
   width: 240px;
 }
 
@@ -1021,7 +1021,7 @@ input[type="radio"].visually-hidden {
   height: 261px;
   position: absolute;
   right: 0px;
-  top: 21px;
+  top: 24px;
   width: 468px;
 }
 
@@ -1103,7 +1103,7 @@ input[type="radio"].visually-hidden {
 
 .company-contacts-wrapper h2 {
   margin-bottom: 25px;
-  margin-top: 82px;
+  margin-top: 80px;
 }
 
 .main-contacts {
@@ -1115,7 +1115,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-text {
   display: block;
-  margin-bottom: 36px;
+  margin-bottom: 31px;
   width: 180px;
 }
 
@@ -1165,12 +1165,14 @@ input[type="radio"].visually-hidden {
 }
 
 .about-company-button {
-  margin-top: 10px;
+  margin-top: 2px;
   padding-left: 41px;
   padding-right: 40px;
 }
 
 .find-us-btn {
+  margin-bottom: 0px;
+  margin-top: 0px;
   padding-left: 63px;
   padding-right: 59px;
 }
@@ -1210,8 +1212,8 @@ input[type="radio"].visually-hidden {
   color: #f3f7f9;
   font-size: 18px;
   line-height: 1.33;
-  margin-bottom: 53px;
-  margin-top: 32px;
+  margin-bottom: 48px;
+  margin-top: 26px;
   width: 323px;
 }
 
@@ -1245,7 +1247,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-nav-top {
-  margin-top: 42px;
+  margin-top: 38px;
 }
 
 .footer-nav-bottom ul{
@@ -1255,8 +1257,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-nav-bottom {
-  margin-bottom: 76px;
-  margin-top: 32px;
+  margin-bottom: 62px;
+  margin-top: 24px;
 }
 
 /* -------------------------footer-bottom------------------------- */
@@ -1382,7 +1384,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   margin-right: 71px;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .user-link-item:not(:first-of-type) {
@@ -1445,7 +1447,7 @@ input[type="radio"].visually-hidden {
 }
 
 .signed-user-text {
-  margin: 13px 24px 12px 0px;
+  margin: 12px 24px 12px 0px;
 }
 
 .signed-user-link:hover .signed-user-icon {
@@ -1518,8 +1520,8 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-list {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .breadcrumbs-list div:not(:last-of-type) {
@@ -1605,6 +1607,11 @@ input[type="radio"].visually-hidden {
 .pseudo-form {
   border-width: 0px;
   padding: 0px;
+}
+
+.pseudo-form .title-like-h3 {
+  display: block;
+  margin-bottom: 13px;
 }
 
 .supply {
