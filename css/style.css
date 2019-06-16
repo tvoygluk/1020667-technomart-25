@@ -1102,7 +1102,8 @@ input[type="radio"].visually-hidden {
 }
 
 .company-contacts-wrapper h2 {
-  margin-bottom: 38px;
+  margin-bottom: 25px;
+  margin-top: 82px;
 }
 
 .main-contacts {
@@ -1120,7 +1121,7 @@ input[type="radio"].visually-hidden {
 
 .map-google-link {
   height: 158px;
-  margin-bottom: 43px;
+  margin-bottom: 40px;
   width: 300px;
 }
 
@@ -1131,7 +1132,7 @@ input[type="radio"].visually-hidden {
 
 .about-company-discription span {
   display: block;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 .about-company-discription span:first-child {
@@ -1148,7 +1149,7 @@ input[type="radio"].visually-hidden {
 }
 
 .partners-list li {
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   padding-left: 36px;
   position: relative;
 }
@@ -1164,6 +1165,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-company-button {
+  margin-top: 10px;
   padding-left: 41px;
   padding-right: 40px;
 }
@@ -2416,6 +2418,7 @@ input[type="radio"].visually-hidden {
   padding-right: 199px;
 }
 
+/* --------------------------------------modal-map-------------------------------------------- */
 .modal-map {
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
   display: block;
@@ -2435,6 +2438,10 @@ input[type="radio"].visually-hidden {
   z-index: 13;
 }
 
+.modal-close-map {
+  z-index: 14;
+}
+
 .modal-map p {
   left: 0;
   margin: 0;
@@ -2443,6 +2450,7 @@ input[type="radio"].visually-hidden {
   z-index: 10;
 }
 
+/* --------------------------------------modal-js-------------------------------------------- */
 .modal {
   display: none;
 }
