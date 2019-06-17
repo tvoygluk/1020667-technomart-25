@@ -991,8 +991,13 @@ input[type="radio"].visually-hidden {
 }
 
 .services-sliders {
+  display: none;
   position: relative;
   width: 700px;
+}
+
+article.block-class {
+  display: block;
 }
 
 .services-sliders h3 {
@@ -1037,7 +1042,7 @@ input[type="radio"].visually-hidden {
   content: "";
   height: 283px;
   position: absolute;
-  right: 0px;
+  right: -5px;
   top: 0px;
   width: 389px;
 }
@@ -1054,7 +1059,7 @@ input[type="radio"].visually-hidden {
   content: "";
   height: 285px;
   position: absolute;
-  right: 0px;
+  right: -10px;
   top: 0px;
   width: 465px;
 }

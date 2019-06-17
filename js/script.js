@@ -104,6 +104,43 @@ try
       }
     }
   });
+
+  var openFirstServiceSection = document.querySelector(".services-menu-item:nth-child(1) .services-menu-link");
+  var openSecondServiceSection = document.querySelector(".services-menu-item:nth-child(2) .services-menu-link");
+  var openThirdServiceSection = document.querySelector(".services-menu-item:nth-child(3) .services-menu-link");
+  var firstServiceSection = document.querySelector(".services-slider-first");
+  var secondServiceSection = document.querySelector(".services-slider-second");
+  var thirdServiceSection = document.querySelector(".services-slider-third");
+
+  openFirstServiceSection.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    openFirstServiceSection.classList.add("active-service");
+    openSecondServiceSection.classList.remove("active-service");
+    openThirdServiceSection.classList.remove("active-service");
+    firstServiceSection.classList.add("block-class");
+    secondServiceSection.classList.remove("block-class");
+    thirdServiceSection.classList.remove("block-class");
+  });
+
+  openSecondServiceSection.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    openFirstServiceSection.classList.remove("active-service");
+    openSecondServiceSection.classList.add("active-service");
+    openThirdServiceSection.classList.remove("active-service");
+    firstServiceSection.classList.remove("block-class");
+    secondServiceSection.classList.add("block-class");
+    thirdServiceSection.classList.remove("block-class");
+  });
+
+  openThirdServiceSection.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    openFirstServiceSection.classList.remove("active-service");
+    openSecondServiceSection.classList.remove("active-service");
+    openThirdServiceSection.classList.add("active-service");
+    firstServiceSection.classList.remove("block-class");
+    secondServiceSection.classList.remove("block-class");
+    thirdServiceSection.classList.add("block-class");
+  });
 }
 catch (err)
 {
