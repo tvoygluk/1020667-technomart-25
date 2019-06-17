@@ -1596,7 +1596,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   height: 38px;
   line-height: 1.38;
-  margin-top: 76px;
+  margin-top: 70px;
   text-align: center;
   text-transform: uppercase;
   width: 140px;
@@ -1716,14 +1716,19 @@ input[type="radio"].visually-hidden {
   width: 220px;
 }
 
+.manufacturers-checkbox-list,
+.supply-radiobutton-list {
+  margin-top: 14px;
+}
+
 .manufacturers-checkbox-list li,
 .supply-radiobutton-list li {
-  margin-top: 14px;
+  margin-top: 0px;
 }
 
 .manufacturers-checkbox-list li:not(:last-of-type),
 .supply-radiobutton-list li:not(:last-of-type) {
-  margin-bottom: 21px;
+  margin-bottom: 11px;
 }
 
 .check,
@@ -2024,7 +2029,7 @@ input[type="radio"].visually-hidden {
 
 .previous-price {
   color: #999999;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
   text-align: center;
   text-decoration: line-through;
 }
@@ -2037,7 +2042,7 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
   border-radius: 3px;
   color: #ffffff;
-  margin: 0 auto 20px;
+  margin: 0 auto 20px 43px;
   padding: 10px 37px 10px 38px;
   position: relative;
 }
@@ -2095,10 +2100,11 @@ input[type="radio"].visually-hidden {
   padding-left: 12px;
 }
 
-.btn-add-bookmarks {
+.user-interface-btn-item .btn-add-bookmarks {
   background-color: #ffffff;
   border: solid 3px #63a63e;
   color: #32425c;
+  padding-bottom: 6px;
   padding-right: 29px;
   padding-left: 33px;
 }
