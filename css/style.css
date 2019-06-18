@@ -2408,6 +2408,20 @@ article.block-class {
 
 /* -------------------------modal catalog (modal-close)------------------------- */
 .modal-close {
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  border-width: 0px;
+  cursor: pointer;
+  font-size: 0;
+  height: 23px;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  width: 22px;
+  z-index: inherit;
+}
+
+/* .modal-close {
   background-color: transparent;
   border-width: 0px;
   cursor: pointer;
@@ -2436,7 +2450,7 @@ article.block-class {
 
 .modal-close::after {
   transform: rotate(-45deg);
-}
+} */
 
 /* --------------------------------------modal-find-us-------------------------------------------- */
 .modal-find-us {
