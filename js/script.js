@@ -112,7 +112,8 @@ try
   var secondServiceSection = document.querySelector(".services-slider-second");
   var thirdServiceSection = document.querySelector(".services-slider-third");
 
-  openFirstServiceSection.addEventListener("click", function(evt) {
+  openFirstServiceSection.addEventListener("click", function(evt)
+  {
     evt.preventDefault();
     openFirstServiceSection.classList.add("active-service");
     openSecondServiceSection.classList.remove("active-service");
@@ -122,7 +123,8 @@ try
     thirdServiceSection.classList.remove("block-class");
   });
 
-  openSecondServiceSection.addEventListener("click", function(evt) {
+  openSecondServiceSection.addEventListener("click", function(evt)
+  {
     evt.preventDefault();
     openFirstServiceSection.classList.remove("active-service");
     openSecondServiceSection.classList.add("active-service");
@@ -132,7 +134,8 @@ try
     thirdServiceSection.classList.remove("block-class");
   });
 
-  openThirdServiceSection.addEventListener("click", function(evt) {
+  openThirdServiceSection.addEventListener("click", function(evt)
+  {
     evt.preventDefault();
     openFirstServiceSection.classList.remove("active-service");
     openSecondServiceSection.classList.remove("active-service");
@@ -140,6 +143,25 @@ try
     firstServiceSection.classList.remove("block-class");
     secondServiceSection.classList.remove("block-class");
     thirdServiceSection.classList.add("block-class");
+  });
+
+  var showNextSlide = document.querySelector(".slider-item:nth-of-type(1) .to-right");
+  var showPreviousSlide = document.querySelector(".slider-item:nth-of-type(2) .to-left");
+  var firstSlide = document.querySelector(".slider-item:nth-of-type(1)");
+  var secondSlide = document.querySelector(".slider-item:nth-of-type(2)");
+
+  showNextSlide.addEventListener("click", function(evt)
+  {
+    evt.preventDefault();
+    firstSlide.classList.add("none-class");
+    secondSlide.classList.remove("none-class");
+  });
+
+  showPreviousSlide.addEventListener("click", function(evt)
+  {
+    evt.preventDefault();
+    firstSlide.classList.remove("none-class");
+    secondSlide.classList.add("none-class");
   });
 }
 catch (err)

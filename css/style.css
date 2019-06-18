@@ -585,6 +585,10 @@ input[type="radio"].visually-hidden {
 }
 
 /* ========================slider======================== */
+.slider li.none-class {
+  display: none;
+}
+
 .slider {
   display: flex;
   height: 266px;
@@ -637,6 +641,7 @@ input[type="radio"].visually-hidden {
 
 .to-left,
 .to-right {
+  cursor: pointer;
   height: 40px;
   margin-top: 29px;
   width: 22px;
