@@ -602,10 +602,12 @@ input[type="radio"].visually-hidden {
 
 .slider-item:nth-of-type(1) {
   background-image: url("../img/slider-image1.jpg");
+  background-repeat: no-repeat;
 }
 
 .slider-item:nth-of-type(2) {
   background-image: url("../img/slider-image2.jpg");
+  background-repeat: no-repeat;
 }
 
 .slider-top h3,
@@ -790,26 +792,6 @@ input[type="radio"].visually-hidden {
 
 .delivery .promo-icon {
   margin: 32px 31px auto auto;
-}
-
-.materials h3,
-.tool h3,
-.machinery h3,
-.discounts h3,
-.delivery h3 {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.25;
-  margin: 26px auto auto 23px;
-}
-
-.materials a,
-.tool a,
-.machinery a,
-.discounts a,
-.delivery a {
-  margin: auto auto 22px 25px;
 }
 
 /* -------------------------main (index) tipical-block, popular-products-block------------------------- */
@@ -1424,6 +1406,14 @@ article.block-class {
 }
 
 /* -------------------------header-catalog (top, middle, nav)------------------------- */
+.header-middle-area ul.none-class {
+  display: none;
+}
+
+.header-middle-area div.none-class {
+  display: none;
+}
+
 .signed-user a {
   color: #000000;
   font-size: 21px;
@@ -2616,4 +2606,3 @@ article.block-class {
   20%, 40%, 60%, 80% { transform: translateX(10px);  }
 }
 
-/* TODO: промо, слайдер,  - убрать высоту */
