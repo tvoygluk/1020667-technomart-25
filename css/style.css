@@ -136,7 +136,7 @@ input[type="radio"].visually-hidden {
 /* -------------------------header------------------------- */
 .header {
   background-color: #f4f7f9;
-  border-bottom: 1px solid inset;
+  border-bottom: 1px solid inherit;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2610,3 +2610,4 @@ article.block-class {
   10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
   20%, 40%, 60%, 80% { transform: translateX(10px);  }
 }
+
