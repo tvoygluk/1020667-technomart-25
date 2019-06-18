@@ -2409,49 +2409,16 @@ article.block-class {
 
 /* -------------------------modal catalog (modal-close)------------------------- */
 .modal-close {
-  background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
-  border-width: 0px;
-  cursor: pointer;
-  font-size: 0;
-  height: 23px;
-  position: absolute;
-  right: 9px;
-  top: 9px;
-  width: 22px;
-  z-index: inherit;
-}
-
-/* .modal-close {
   background-color: transparent;
   border-width: 0px;
   cursor: pointer;
-  font-size: 0;
+  height: 21px;
   position: absolute;
-  right: 2px;
-  top: 0px;
+  right: 16px;
+  top: 9px;
+  width: 21px;
   z-index: inherit;
 }
-
-.modal-close::before,
-.modal-close::after {
-  content: "";
-  background-color:#ee3643;
-  border-radius: 1px;
-  height: 4px;
-  position: absolute;
-  right: 6px;
-  top: 19px;
-  width: 30px;
-}
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
-} */
 
 /* --------------------------------------modal-find-us-------------------------------------------- */
 .modal-find-us {
