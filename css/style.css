@@ -808,6 +808,7 @@ input[type="radio"].visually-hidden {
   align-content: flex-start;
   background-color: #f9f5f0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0px 0px 21px 0px;
   padding: 1px;
@@ -2065,7 +2066,7 @@ article.block-class {
   border: solid 1px #e5e5e5;
   display: flex;
   flex-direction: column;
-  height: 318px;
+  /* height: 318px; */
   margin-bottom: 20px;
   margin-left: 20px;
   position: relative;
@@ -2636,3 +2637,5 @@ article.block-class {
   10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
   20%, 40%, 60%, 80% { transform: translateX(10px);  }
 }
+
+/* TODO: промо, слайдер, заголовок h1, кнопка Показать - убрать высоту */
